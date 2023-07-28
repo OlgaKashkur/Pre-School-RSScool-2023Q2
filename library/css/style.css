@@ -110,5 +110,121 @@
     display: flex;
     padding-top: 20px;
 }
+/*секция about размеры ее*/
+.about {
+    width: 1440px;
+    height: 837px;
+    background: #FFF;
+}
+/*создание градиента на картинки и вставка картинки*/
+.gradient_with_img {
+    height: 600px;
+    background-image: linear-gradient(to top, rgba(12, 12, 14, 0), rgba(12,12,14, 1)), url(../img/welcome-1440.jpg);
+    padding-top: 255px;  /*опустился блок с текстом*/
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.welcom h2 {
+    width: 520px;
+    height: 150px;
+    color: #FFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+/*блок с текстом размещается в контейнере welcom*/
+.welcom {
+    display: flex;
+    width: 600px;
+    height: 220px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #0C0C0E;
+}
+.text_about {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+/*размещение текста about*/
+.text_about h2 {
+    margin-top: 20px;
+    margin-left: 667px;
+}
+/*создание черты под текстом about*/
+.text_about h2:after {
+    content: "";
+    display: block; 
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-left: 28px;
+    margin-top: 20px;
+}
+.about_cards_text h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */ 
+    margin-top: 40px;  
+}
+/*контейнер для картинок*/
+.container_cards_about {
+    height: 560px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/*картинки с отступами справа*/
+.container_cards_about img {
+    margin-right: 25px;
+}
+/*последняя картинка без отступа*/
+.container_cards_about img:last-child {
+    margin-right: 0px;
+}
+/*ставим на место кнопки*/
+.shelder {
+    padding-left: 686px;
+    padding-top: 40px;
+}
+/*кнопки стилизация*/
+.inputcolor {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: relative;
+    background-color: #0C0C0E;
+    margin-right: 10px;
+    outline: none;
+  }
+  /*кнопки стилизация при переходе*/
+  input:checked {
+    border: 13px solid #BB945F;
+    margin-top: 5px;
+}
+ 
+  
 
 
+ 
