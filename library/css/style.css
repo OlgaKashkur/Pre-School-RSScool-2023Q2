@@ -1,0 +1,114 @@
+/* forum-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/forum-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* inter-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  html {
+    box-sizing: border-box; /* устанавливается для всех эленментов обязательно. чтобы при изменении падингов не изменялся размер блока. */
+  }
+  *, *::before, * ::after { /* для всех псевдоэлементов всех элементов */
+    box-sizing: inherit; /* inherit - наследовать от родителя */
+ } 
+ .body{ /*если сайт будет видоизменятся, то что бы при добавлении брадись стили родителя */
+    font-family: 'Inter', 'Forum';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #000;
+ }
+ /* header */ 
+ .header {   /* выравнивание header по центу и 1440 размер */ 
+    width: 1440px;
+    margin: 0 auto;
+ }
+ /*обертка header */
+ .coat { 
+    height: 90px;
+    background: #0C0C0E;
+    width: 1440px;
+}
+/*заголовок header */
+ .coat h1 {
+    color: #FFFFFF;
+    font-family: Forum;
+    font-size: 30px;
+    font-weight: 400px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 294px;
+    height: 50px;
+    margin-left: 20px;
+}
+/*размещение навигации горизонтально с отступами 30 */
+.navinfo {
+    display: inline-block; 
+    margin-right: 30px;
+}
+/*оформление ссылок */
+.navinfo a {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 250% */
+    text-decoration: none;
+}
+/*оформление ссылок при наведении*/
+.navinfo a:hover{
+    color: #bec4ae;
+    cursor: pointer;
+    text-decoration: underline;
+}
+/*последний элемент в навигации без отступа*/
+.navinfo:last-child {
+    margin-right: 0px;
+}
+/*контейнер для навигации*/
+.navlist {
+    justify-content:space-between;
+    display: flex;
+    width: 584px;
+}
+/*контейнер для навигации всесте скартинкой*/
+.navprofil {
+    justify-content:space-between;
+    display: flex;
+    width: 672px;
+}
+/*размещение картинки в ее же диве*/
+.logo {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 20px;
+}
+/*контейнер для заголовка и навишации + картинка (контейнер их)
+размер контейнера берет у родителя header*/
+.coat {
+    justify-content:space-between;
+    display: flex;
+    padding-top: 20px;
+}
+
+
