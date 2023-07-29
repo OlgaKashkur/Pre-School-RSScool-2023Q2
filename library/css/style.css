@@ -113,7 +113,7 @@
 /*секция about размеры ее*/
 .about {
     width: 1440px;
-    height: 837px;
+    height: 1436px;
     background: #FFF;
 }
 /*создание градиента на картинки и вставка картинки*/
@@ -212,19 +212,195 @@
     border-radius: 50%;
     width: 16px;
     height: 16px;
-    margin-right: 10px;
     position: relative;
     background-color: #0C0C0E;
     margin-right: 10px;
+    margin-left: 0px;
     outline: none;
   }
   /*кнопки стилизация при переходе*/
-  input:checked {
+.shelder input:checked {
     border: 13px solid #BB945F;
-    margin-top: 5px;
 }
- 
-  
+.favorites_{
+    width: 1440px;
+    height: 1439px;
+    background: #FFF;
+}
+/*размещение текста Favorites*/
+.text_favorites h2 {
+    margin-top: 20px;
+    margin-left: 640px;
+}
+/*создание черты под текстом Favorites*/
+.text_favorites h2:after {
+    content: "";
+    display: block; 
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.text_favorites {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    }
+ /*создание блока с текстом Pick favorites of*/
+ .text_favorites_second {
+    margin-top: 61px;
+    margin-left: 20px;
+    width: 234px;
+    height: 24px;
+ }
+.text_favorites_second p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/*создание  кнопок favorites*/
+.favorites_input:first-of-type {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+.favorites_input label {
+    margin-right: 90px;
+    line-height: 32px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 20px;
+  }
+   input[type='radio'] {
+    accent-color: #000000;
+    margin: 0px;
+    cursor: pointer;
+}
+.favorites_input {
+    margin-left: 20px;
+}
+/*подсветка кнопок при наведении favorites*/
+.favorites_input input:hover {
+    outline: none;
+    box-shadow: 0 0 0 5px #f5ede9;
+    cursor: pointer;
+ }
+  .favorites_input label:hover {
+    outline: none;
+    box-shadow: 0 0 0 5px #f5ede9;
+    cursor: pointer;
+ }
+ /*карточки на покупки книг*/
+ .books_winter {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid #000;
+ } 
+ .staff {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 102px;
+    height: 40px;
+    text-align: left;
+    white-space: nowrap;
+ }
+  /*черта для подчеркивания*/
+ .staff:after {
+    content: "";
+    display: block; 
+    width: 60px;
+    height: 1px;
+    background: #BB945F;     
+}
+.the_book {
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: pre-line;
+}
+.text_buy {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 355px;
+}
+.buy_botton {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.button_buy {
+    width: 75px;
+    height: 30px;
+    color: #0C0C0E;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    background: #FFF;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.button_buy:hover {
+    background-color: #BB945F;
+    transition: background-color .6s linear;
+}
+.book_img {
+   padding-top: 295px;
+   margin-left: -160px;
+}
+.books {
+    display: flex;
+    flex-wrap:nowrap;
+}
 
 
- 
+
+
+
+
+

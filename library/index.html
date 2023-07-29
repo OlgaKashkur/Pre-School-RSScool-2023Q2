@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,76 +8,113 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="coat">
             <h1>Brooklyn Public Library</h1>
-                <div class="navprofil">
-                    <nav>
-                        <ul class="navlist">
-                            <li class="navinfo"><a href="#about">About</a></li>
-                            <li class="navinfo"><a href="#favorites">Favorites</a></li>
-                            <li class="navinfo"><a href="#coffeeshop">Coffee shop</a></li>
-                            <li class="navinfo"><a href="#contacts">Contacts</a></li>
-                            <li class="navinfo"><a href="#librarycard">Library Card</a></li>
-                        </ul>
-                    </nav>
-                        <div class="logo">
-                            <img src="./img/icon_profile.svg" alt="icon_profile">
-                        </div>
+            <div class="navprofil">
+                <nav>
+                    <ul class="navlist">
+                        <li class="navinfo"><a href="#about">About</a></li>
+                        <li class="navinfo"><a href="#favorites">Favorites</a></li>
+                        <li class="navinfo"><a href="#coffeeshop">Coffee shop</a></li>
+                        <li class="navinfo"><a href="#contacts">Contacts</a></li>
+                        <li class="navinfo"><a href="#librarycard">Library Card</a></li>
+                    </ul>
+                </nav>
+                <div class="logo">
+                    <img src="./img/icon_profile.svg" alt="icon_profile">
                 </div>
-         </div>           
-    </header>
-        <main>
-            <div class="header">
-                <section class="about">
-                    <div class="gradient_with_img"> 
-                        <div class="welcom">
-                            <h2>Welcome 
-                                  to the Brooklyn
-                                      Library</h2>
-                        </div> 
-                    </div>
-                    <div class="text_about" id="about">
-                        <h2>About</h2>
-                    </div>
-                    <div class="about_cards_text">
-                        <h2>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </h2>
-                    </div>
-                    <div class="container_cards_about">
-                        <img src="../library/img/slider1/image 1.jpg" alt="image 1">
-                        <img src="../library/img/slider1/image 2.jpg" alt="image 2">
-                        <img src="../library/img/slider1/image 3.jpg" alt="image 3">
-                        <!--<img src="../library/img/slider1/image 4.jpg" alt="image 4">
-                        <img src="../library/img/slider1/image 5.jpg" alt="image 5">-->
-                    </div>
-                    <div class="shelder">
-                        <input class="inputcolor" type="radio" name="point" id="slide1" checked>
-	                    <input class="inputcolor" type="radio" name="point" id="slide2">
-	                    <input class="inputcolor" type="radio" name="point" id="slide3">
-                            <label for="slide1"></label>
-                            <label for="slide2"></label>
-                            <label for="slide3"></label>
-                    </div>        
-                </section>
-                <section id="favorites">
-                
-                </section>
-                <section id="coffeeshop">
-
-                </section>
-            
-                <section id="contacts">
-                </section>
-                <section id="librarycard">
-
-                </section>
             </div>
-        </main>
-        <footer>
+        </div>
+    </header>
+    <main>
+        <div class="header">
+            <section class="about">
+                <div class="gradient_with_img">
+                    <div class="welcom">
+                        <h2>Welcome
+                            to the Brooklyn
+                            Library</h2>
+                    </div>
+                </div>
+                <div class="text_about" id="about">
+                    <h2>About</h2>
+                </div>
+                <div class="about_cards_text">
+                    <h2>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside
+                    </h2>
+                </div>
+                <div class="container_cards_about">
+                    <img src="../library/img/slider1/image 1.jpg" alt="image 1">
+                    <img src="../library/img/slider1/image 2.jpg" alt="image 2">
+                    <img src="../library/img/slider1/image 3.jpg" alt="image 3">
+                    <!--<img src="../library/img/slider1/image 4.jpg" alt="image 4">
+                                            <img src="../library/img/slider1/image 5.jpg" alt="image 5">-->
+                </div>
+                <div class="shelder">
+                    <input class="inputcolor" type="radio" name="point" id="slide1" checked>
+                    <input class="inputcolor" type="radio" name="point" id="slide2">
+                    <input class="inputcolor" type="radio" name="point" id="slide3">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </section>
+            <section class="favorites_">
+                <div class="text_favorites" id="favorites">
+                    <h2>Favorites</h2>
+                </div>
+                <div class="text_favorites_second">
+                    <p>Pick favorites of season</p>
+                </div>
+                <div class="favorites_input">
+                    <input type="radio" name="favor" id="Winter" value="Winter" checked>
+                    <label for="Winter">Winter</label>
+                    <input type="radio" name="favor" id="Spring" value="Spring">
+                    <label for="Spring">Spring</label>
+                    <input type="radio" name="favor" id="Summer" value="Summer">
+                    <label for="Summer">Summer</label>
+                    <input type="radio" name="favor" id="Autumn" value="Autumn">
+                    <label for="Autumn">Autumn</label>
+                </div>
+                <div class="books_buy">
+                    <div class="books">
+                        <div class="books_winter">
+                            <p class="staff">Staff Picks</p>
+                            <p class="the_book">The Book Eaters 
+                                By Sunyi Dean</p>
+                            <p class="text_buy">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                            <div class="buy_botton">
+                                <button class="button_buy">Buy</button>
+                            </div>
+                        </div>
+                        <div class="book_img"><img src="./img/book1.jpg" alt="The Book Eaters By Sunyi Dean">
+                        </div>
+                    </div> 
+                </div>
 
-        </footer>
-    
+
+
+
+            </section>
+            <section id="coffeeshop">
+
+            </section>
+
+            <section id="contacts">
+            </section>
+            <section id="librarycard">
+
+            </section>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
