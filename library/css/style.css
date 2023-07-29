@@ -1,54 +1,75 @@
 /* forum-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Forum';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/forum-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('../fonts/forum-v16-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* inter-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('../fonts/inter-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  html {
-    box-sizing: border-box; /* устанавливается для всех эленментов обязательно. чтобы при изменении падингов не изменялся размер блока. */
-  }
-  *, *::before, * ::after { /* для всех псевдоэлементов всех элементов */
-    box-sizing: inherit; /* inherit - наследовать от родителя */
- } 
- .body{ /*если сайт будет видоизменятся, то что бы при добавлении брадись стили родителя */
+    src: url('../fonts/inter-v12-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    box-sizing: border-box;
+    /* устанавливается для всех эленментов обязательно. чтобы при изменении падингов не изменялся размер блока. */
+}
+
+*,
+*::before,
+* ::after {
+    /* для всех псевдоэлементов всех элементов */
+    box-sizing: inherit;
+    /* inherit - наследовать от родителя */
+}
+
+.body {
+    /*если сайт будет видоизменятся, то что бы при добавлении брадись стили родителя */
     font-family: 'Inter', 'Forum';
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
     color: #000;
- }
- /* header */ 
- .header {   /* выравнивание header по центу и 1440 размер */ 
+}
+
+/* header */
+.header {
+    /* выравнивание header по центу и 1440 размер */
     width: 1440px;
     margin: 0 auto;
- }
- /*обертка header */
- .coat { 
+}
+
+/*обертка header */
+.coat {
     height: 90px;
     background: #0C0C0E;
     width: 1440px;
 }
+
 /*заголовок header */
- .coat h1 {
+.coat h1 {
     color: #FFFFFF;
     font-family: Forum;
     font-size: 30px;
@@ -60,11 +81,13 @@
     height: 50px;
     margin-left: 20px;
 }
+
 /*размещение навигации горизонтально с отступами 30 */
 .navinfo {
-    display: inline-block; 
+    display: inline-block;
     margin-right: 30px;
 }
+
 /*оформление ссылок */
 .navinfo a {
     color: #FFF;
@@ -72,11 +95,13 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 250% */
+    line-height: 50px;
+    /* 250% */
     text-decoration: none;
 }
+
 /*оформление ссылок при наведении*/
-.navinfo a:hover{
+.navinfo a:hover {
     color: #bec4ae;
     cursor: pointer;
     text-decoration: underline;
@@ -87,13 +112,13 @@
 }
 /*контейнер для навигации*/
 .navlist {
-    justify-content:space-between;
+    justify-content: space-between;
     display: flex;
     width: 584px;
 }
 /*контейнер для навигации всесте скартинкой*/
 .navprofil {
-    justify-content:space-between;
+    justify-content: space-between;
     display: flex;
     width: 672px;
 }
@@ -106,7 +131,7 @@
 /*контейнер для заголовка и навишации + картинка (контейнер их)
 размер контейнера берет у родителя header*/
 .coat {
-    justify-content:space-between;
+    justify-content: space-between;
     display: flex;
     padding-top: 20px;
 }
@@ -119,8 +144,9 @@
 /*создание градиента на картинки и вставка картинки*/
 .gradient_with_img {
     height: 600px;
-    background-image: linear-gradient(to top, rgba(12, 12, 14, 0), rgba(12,12,14, 1)), url(../img/welcome-1440.jpg);
-    padding-top: 255px;  /*опустился блок с текстом*/
+    background-image: linear-gradient(to top, rgba(12, 12, 14, 0), rgba(12, 12, 14, 1)), url(../img/welcome-1440.jpg);
+    padding-top: 255px;
+    /*опустился блок с текстом*/
     padding-left: 0px;
     margin-left: 0px;
 }
@@ -133,7 +159,8 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 125% */
+    line-height: 50px;
+    /* 125% */
     letter-spacing: 3px;
     text-transform: uppercase;
     white-space: pre-line;
@@ -149,31 +176,36 @@
     flex-shrink: 0;
     background: #0C0C0E;
 }
+
 .text_about {
     color: #0C0C0E;
     font-family: Forum;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 100% */
+    line-height: 40px;
+    /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
 }
+
 /*размещение текста about*/
 .text_about h2 {
     margin-top: 20px;
     margin-left: 667px;
 }
+
 /*создание черты под текстом about*/
 .text_about h2:after {
     content: "";
-    display: block; 
+    display: block;
     width: 50px;
     height: 1px;
     background: #0C0C0E;
     margin-left: 28px;
     margin-top: 20px;
 }
+
 .about_cards_text h2 {
     color: #000;
     text-align: center;
@@ -181,9 +213,11 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */ 
-    margin-top: 40px;  
+    line-height: 40px;
+    /* 200% */
+    margin-top: 40px;
 }
+
 /*контейнер для картинок*/
 .container_cards_about {
     height: 560px;
@@ -193,19 +227,23 @@
     display: flex;
     justify-content: space-between;
 }
+
 /*картинки с отступами справа*/
 .container_cards_about img {
     margin-right: 25px;
 }
+
 /*последняя картинка без отступа*/
 .container_cards_about img:last-child {
     margin-right: 0px;
 }
+
 /*ставим на место кнопки*/
 .shelder {
     padding-left: 686px;
     padding-top: 40px;
 }
+
 /*кнопки стилизация*/
 .inputcolor {
     appearance: none;
@@ -217,12 +255,12 @@
     margin-right: 10px;
     margin-left: 0px;
     outline: none;
-  }
-  /*кнопки стилизация при переходе*/
+}
+/*кнопки стилизация при переходе*/
 .shelder input:checked {
     border: 13px solid #BB945F;
 }
-.favorites_{
+.favorites_ {
     width: 1440px;
     height: 1439px;
     background: #FFF;
@@ -235,30 +273,34 @@
 /*создание черты под текстом Favorites*/
 .text_favorites h2:after {
     content: "";
-    display: block; 
+    display: block;
     width: 50px;
     height: 1px;
     background: #0C0C0E;
     margin-left: 55px;
     margin-top: 20px;
 }
+
 .text_favorites {
     color: #0C0C0E;
     font-family: Forum;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 100% */
+    line-height: 40px;
+    /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
-    }
- /*создание блока с текстом Pick favorites of*/
- .text_favorites_second {
+}
+
+/*создание блока с текстом Pick favorites of*/
+.text_favorites_second {
     margin-top: 61px;
     margin-left: 20px;
     width: 234px;
     height: 24px;
- }
+}
+
 .text_favorites_second p {
     color: #000;
     text-align: center;
@@ -268,13 +310,15 @@
     font-weight: 700;
     line-height: normal;
 }
+
 /*создание  кнопок favorites*/
 .favorites_input:first-of-type {
     display: flex;
     align-items: flex-start;
     margin-top: 40px;
     margin-left: 20px;
-  }
+}
+
 .favorites_input label {
     margin-right: 90px;
     line-height: 32px;
@@ -285,62 +329,73 @@
     font-weight: 400;
     line-height: normal;
     padding-left: 20px;
-  }
-   input[type='radio'] {
+}
+
+input[type='radio'] {
     accent-color: #000000;
     margin: 0px;
     cursor: pointer;
 }
+
 .favorites_input {
     margin-left: 20px;
+    margin-top: 40px;
 }
+
 /*подсветка кнопок при наведении favorites*/
 .favorites_input input:hover {
     outline: none;
     box-shadow: 0 0 0 5px #f5ede9;
     cursor: pointer;
- }
-  .favorites_input label:hover {
+}
+
+.favorites_input label:hover {
     outline: none;
     box-shadow: 0 0 0 5px #f5ede9;
     cursor: pointer;
- }
- /*карточки на покупки книг*/
- .books_winter {
+}
+
+/*карточки на покупки книг*/
+.books_winter {
     width: 550px;
     height: 555px;
     flex-shrink: 0;
     margin-top: 40px;
     margin-left: 20px;
     border: 1px solid #000;
- } 
- .staff {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.staff {
     color: #000;
     font-family: Forum;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-top: 15px;
-    margin-left: 20px;
     width: 102px;
     height: 40px;
     text-align: left;
     white-space: nowrap;
- }
-  /*черта для подчеркивания*/
- .staff:after {
+}
+
+/*черта для подчеркивания*/
+.staff:after {
     content: "";
-    display: block; 
+    display: block;
     width: 60px;
     height: 1px;
-    background: #BB945F;     
+    background: #BB945F;
 }
+
 .the_book {
     margin-top: 20px;
-    margin-left: 20px;
     color: #000;
     font-family: Inter;
     font-size: 15px;
@@ -351,27 +406,28 @@
     text-transform: capitalize;
     white-space: pre-line;
 }
+
 .text_buy {
     color: #000;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 266.667% */
+    line-height: 40px;
+    /* 266.667% */
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-top: 20px;
-    margin-left: 20px;
     width: 355px;
 }
+
 .buy_botton {
-    margin-left: 20px;
     margin-top: 15px;
 }
+
 .button_buy {
     width: 75px;
     height: 30px;
-    color: #0C0C0E;
     color: #0C0C0E;
     text-align: center;
     font-family: Inter;
@@ -382,25 +438,145 @@
     letter-spacing: 1px;
     border: 1px solid #000;
     background: #FFF;
-    border-radius: 5%;
+    border-radius: 2px;
     cursor: pointer;
 }
+
 .button_buy:hover {
     background-color: #BB945F;
     transition: background-color .6s linear;
 }
+
 .book_img {
-   padding-top: 295px;
-   margin-left: -160px;
+    padding-top: 295px;
+    margin-left: -160px;
 }
+/*отступы для кнопок в карточках для привязки в одном месте*/
+.books_winter>div:last-of-type {
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+/*контейнер для карточек */
 .books {
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
-
-
-
-
-
-
-
+/*карточки весна */
+.books_spring {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.books_spring>div:last-of-type {
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+/*кнопка заблокированная */
+.button_buy1 {
+    width: 75px;
+    height: 30px;
+    color:#BB945F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    border: 1px solid #BB945F;
+    background: #FFF;
+    border-radius: 2px;
+    cursor: pointer;
+}
+/*карточки лето */
+.books_summer {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.books_summer>div:last-of-type {
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+/*карточки осень */
+.books_autumn {
+    width: 550px;
+    height: 555px;
+    flex-shrink: 0;
+    margin-top: 40px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.books_autumn>div:last-of-type {
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+/*блокировка карточек с книгами разделов поры года */
+.page2 {
+    display: none;
+}
+.page3 {
+    display: none;
+}
+.page4 {
+    display: none;
+}
+/*создание черты под текстом coffeeshop*/
+.text_coffeeshop h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-left: 85px;
+    margin-top: 20px;
+}
+.coffeeshop_cards_text h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 2px;
+}
+.text_coffeeshop {
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.coffeeshop {
+    height: 1439px;
+    background: #FFF;
+    display: flex;
+    width: 1440px;
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+    
