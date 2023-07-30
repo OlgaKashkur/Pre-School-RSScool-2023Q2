@@ -1104,6 +1104,11 @@ input:hover {
     cursor: pointer;
 }
 
+.container_icon a:hover {
+    background-color: #BB945F;
+    transition: background-color .6s linear;
+}
+
 .container_icon {
     display: flex;
     justify-content: space-between;
@@ -1175,6 +1180,11 @@ input:hover {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    cursor: pointer;
+}
+.adress a:hover {
+    background-color: #BB945F;
+    transition: background-color .6s linear;
 }
 
 .rs a {
@@ -1189,6 +1199,12 @@ input:hover {
     /* 100% */
     letter-spacing: 2px;
     align-items: right;
+    cursor: pointer;
+}
+
+.rs a:hover {
+    background-color: #BB945F;
+    transition: background-color .6s linear;
 }
 
 .rs {
