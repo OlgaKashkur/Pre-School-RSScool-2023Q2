@@ -605,7 +605,6 @@ input[type='radio'] {
 }
 
 .coffeeshop {
-    height: 1439px;
     background: #FFF;
     display: flex;
     width: 1440px;
@@ -640,7 +639,6 @@ input[type='radio'] {
     letter-spacing: 2px;
     text-transform: capitalize;
     width: 197px;
-
 }
 
 .line {
@@ -661,7 +659,6 @@ input[type='radio'] {
     letter-spacing: 2px;
     text-transform: capitalize;
 }
-
 /*контейнер с элементами с ценой*/
 .coffee_tea {
     display: flex;
@@ -671,7 +668,6 @@ input[type='radio'] {
     white-space: nowrap;
     /*строка не переносится из блока, забываю(*/
 }
-
 /*контейнер с элементами на продажу*/
 .prisces_coffee {
     display: flex;
@@ -681,7 +677,6 @@ input[type='radio'] {
     margin-top: 40px;
     gap: 40px;
 }
-
 .cakes {
     display: flex;
     flex-direction: column;
@@ -723,9 +718,132 @@ input[type='radio'] {
     white-space: nowrap;
     text-align: right;
 }
-
 /*пыталась выровнять названия кексов справа*/
 .coffee_cakes .coffee_element {
     margin-left: auto;
     margin-right: 0;
 }
+/*блок контакты*/
+.contacts {
+    display: flex;
+    width: 1440px;
+    padding: 20px 20px 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+/*создание черты под текстом coffeeshop*/
+.text_ourcontacts h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+
+.text_ourcontacts h2 {
+        color: #0C0C0E;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+/*создание адресов*/
+.director {
+    display: flex;
+    width: 351px;
+    flex-direction: row;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.ld {
+    color: #000;
+    margin-left: 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+.ah {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.for {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.conteiner_number {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.conteiner_number a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.ouradress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+.adress {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+}
+.ouradresser>div:last-of-type {
+  padding-bottom: 10px;
+}
+.for_all {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+
