@@ -34,6 +34,8 @@
 html {
     box-sizing: border-box;
     /* устанавливается для всех эленментов обязательно. чтобы при изменении падингов не изменялся размер блока. */
+    scroll-behavior: smooth;
+    /* для плавной прокрутки сайта по якорям*/
 }
 
 *,
@@ -106,28 +108,33 @@ html {
     cursor: pointer;
     text-decoration: underline;
 }
+
 /*последний элемент в навигации без отступа*/
 .navinfo:last-child {
     margin-right: 0px;
 }
+
 /*контейнер для навигации*/
 .navlist {
     justify-content: space-between;
     display: flex;
     width: 584px;
 }
+
 /*контейнер для навигации всесте скартинкой*/
 .navprofil {
     justify-content: space-between;
     display: flex;
     width: 672px;
 }
+
 /*размещение картинки в ее же диве*/
 .logo {
     margin-top: 12px;
     margin-bottom: 12px;
     margin-right: 20px;
 }
+
 /*контейнер для заголовка и навишации + картинка (контейнер их)
 размер контейнера берет у родителя header*/
 .coat {
@@ -135,12 +142,14 @@ html {
     display: flex;
     padding-top: 20px;
 }
+
 /*секция about размеры ее*/
 .about {
     width: 1440px;
     height: 1436px;
     background: #FFF;
 }
+
 /*создание градиента на картинки и вставка картинки*/
 .gradient_with_img {
     height: 600px;
@@ -150,6 +159,7 @@ html {
     padding-left: 0px;
     margin-left: 0px;
 }
+
 .welcom h2 {
     width: 520px;
     height: 150px;
@@ -165,6 +175,7 @@ html {
     text-transform: uppercase;
     white-space: pre-line;
 }
+
 /*блок с текстом размещается в контейнере welcom*/
 .welcom {
     display: flex;
@@ -175,6 +186,7 @@ html {
     align-items: center;
     flex-shrink: 0;
     background: #0C0C0E;
+    margin-top: -35px;
 }
 
 .text_about {
@@ -241,7 +253,7 @@ html {
 /*ставим на место кнопки*/
 .shelder {
     padding-left: 686px;
-    padding-top: 40px;
+    padding-top: 33px;
 }
 
 /*кнопки стилизация*/
@@ -256,20 +268,24 @@ html {
     margin-left: 0px;
     outline: none;
 }
+
 /*кнопки стилизация при переходе*/
 .shelder input:checked {
     border: 13px solid #BB945F;
 }
+
 .favorites_ {
     width: 1440px;
     height: 1439px;
     background: #FFF;
 }
+
 /*размещение текста Favorites*/
 .text_favorites h2 {
     margin-top: 20px;
     margin-left: 640px;
 }
+
 /*создание черты под текстом Favorites*/
 .text_favorites h2:after {
     content: "";
@@ -295,7 +311,7 @@ html {
 
 /*создание блока с текстом Pick favorites of*/
 .text_favorites_second {
-    margin-top: 61px;
+    margin-top: 41px;
     margin-left: 20px;
     width: 234px;
     height: 24px;
@@ -449,19 +465,24 @@ input[type='radio'] {
 
 .book_img {
     padding-top: 295px;
-    margin-left: -160px;
+    margin-left: -334px;
+    padding-right: 20px;
 }
+
 /*отступы для кнопок в карточках для привязки в одном месте*/
 .books_winter>div:last-of-type {
     margin-top: auto;
     padding-bottom: 15px;
 }
+
 /*контейнер для карточек */
 .books {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 1440px;
 }
+
 /*карточки весна */
 .books_spring {
     width: 550px;
@@ -474,15 +495,17 @@ input[type='radio'] {
     flex-direction: column;
     padding-left: 20px;
 }
+
 .books_spring>div:last-of-type {
     margin-top: auto;
     padding-bottom: 15px;
 }
+
 /*кнопка заблокированная */
 .button_buy1 {
     width: 75px;
     height: 30px;
-    color:#BB945F;
+    color: #BB945F;
     text-align: center;
     font-family: Inter;
     font-size: 10px;
@@ -495,6 +518,7 @@ input[type='radio'] {
     border-radius: 2px;
     cursor: pointer;
 }
+
 /*карточки лето */
 .books_summer {
     width: 550px;
@@ -507,10 +531,12 @@ input[type='radio'] {
     flex-direction: column;
     padding-left: 20px;
 }
+
 .books_summer>div:last-of-type {
     margin-top: auto;
     padding-bottom: 15px;
 }
+
 /*карточки осень */
 .books_autumn {
     width: 550px;
@@ -523,20 +549,25 @@ input[type='radio'] {
     flex-direction: column;
     padding-left: 20px;
 }
+
 .books_autumn>div:last-of-type {
     margin-top: auto;
     padding-bottom: 15px;
 }
+
 /*блокировка карточек с книгами разделов поры года */
 .page2 {
     display: none;
 }
+
 .page3 {
     display: none;
 }
+
 .page4 {
     display: none;
 }
+
 /*создание черты под текстом coffeeshop*/
 .text_coffeeshop h2:after {
     content: "";
@@ -547,6 +578,7 @@ input[type='radio'] {
     margin-left: 85px;
     margin-top: 20px;
 }
+
 .coffeeshop_cards_text h2 {
     color: #000;
     text-align: center;
@@ -557,7 +589,9 @@ input[type='radio'] {
     line-height: 40px;
     /* 200% */
     letter-spacing: 2px;
+
 }
+
 .text_coffeeshop {
     color: #0C0C0E;
     font-family: Forum;
@@ -569,14 +603,129 @@ input[type='radio'] {
     letter-spacing: 2px;
     text-transform: capitalize;
 }
+
 .coffeeshop {
     height: 1439px;
     background: #FFF;
     display: flex;
     width: 1440px;
-    padding: 20px 20px 40px 20px;
     flex-direction: column;
     align-items: center;
     gap: 40px;
 }
-    
+
+/*название раздела с ценами*/
+.coffee_name {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+/*цены кофе*/
+.coffee_element {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    width: 197px;
+
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+    margin: 0 auto;
+}
+
+.ye {
+    color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/*контейнер с элементами с ценой*/
+.coffee_tea {
+    display: flex;
+    width: 437px;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    /*строка не переносится из блока, забываю(*/
+}
+
+/*контейнер с элементами на продажу*/
+.prisces_coffee {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 438px;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.cakes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 482px;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+/*контейнер с элементами с ценой*/
+.coffee_cakes {
+    display: flex;
+    width: 482px;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    /*строка не переносится из блока, забываю(*/
+    text-align: right;
+    gap: 40px;
+}
+
+.prisces {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    height: 520px;
+}
+
+.cakes_name {
+    color: #BB945F;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/*пыталась выровнять названия кексов справа*/
+.coffee_cakes .coffee_element {
+    margin-left: auto;
+    margin-right: 0;
+}
