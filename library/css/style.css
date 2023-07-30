@@ -659,6 +659,7 @@ input[type='radio'] {
     letter-spacing: 2px;
     text-transform: capitalize;
 }
+
 /*контейнер с элементами с ценой*/
 .coffee_tea {
     display: flex;
@@ -668,6 +669,7 @@ input[type='radio'] {
     white-space: nowrap;
     /*строка не переносится из блока, забываю(*/
 }
+
 /*контейнер с элементами на продажу*/
 .prisces_coffee {
     display: flex;
@@ -677,6 +679,7 @@ input[type='radio'] {
     margin-top: 40px;
     gap: 40px;
 }
+
 .cakes {
     display: flex;
     flex-direction: column;
@@ -718,11 +721,13 @@ input[type='radio'] {
     white-space: nowrap;
     text-align: right;
 }
+
 /*пыталась выровнять названия кексов справа*/
 .coffee_cakes .coffee_element {
     margin-left: auto;
     margin-right: 0;
 }
+
 /*блок контакты*/
 .contacts {
     display: flex;
@@ -733,7 +738,8 @@ input[type='radio'] {
     gap: 40px;
     margin-top: 80px;
 }
-/*создание черты под текстом coffeeshop*/
+
+/*создание черты под текстом адрес*/
 .text_ourcontacts h2:after {
     content: "";
     display: block;
@@ -745,16 +751,18 @@ input[type='radio'] {
 }
 
 .text_ourcontacts h2 {
-        color: #0C0C0E;
+    color: #0C0C0E;
     text-align: center;
     font-family: Forum;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 100% */
+    line-height: 40px;
+    /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
 }
+
 /*создание адресов*/
 .director {
     display: flex;
@@ -763,6 +771,7 @@ input[type='radio'] {
     text-align: left;
     padding-bottom: 15px;
 }
+
 .ld {
     color: #000;
     margin-left: 0;
@@ -770,35 +779,41 @@ input[type='radio'] {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
     white-space: nowrap;
 }
+
 .ah {
     color: #000;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-left: 5px;
     margin-bottom: 20px;
     white-space: nowrap;
 }
+
 .for {
     color: #000;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
     margin-top: 20px;
 }
+
 .conteiner_number {
     display: flex;
     flex-direction: column;
@@ -807,6 +822,7 @@ input[type='radio'] {
     margin-left: 0;
     margin-top: 20px;
 }
+
 .conteiner_number a {
     text-decoration: none;
     color: #000;
@@ -814,7 +830,8 @@ input[type='radio'] {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
 }
@@ -824,26 +841,251 @@ input[type='radio'] {
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-    
+
 }
+
 .adress {
     display: flex;
     justify-content: space-between;
     width: 1400px;
 }
+
 .ouradresser>div:last-of-type {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
+
 .for_all {
     color: #000;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 40px; /* 200% */
+    line-height: 40px;
+    /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize;
 }
 
+.ah a {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
 
+/*создание черты под текстом выбором карточек*/
+.text_librarycard h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-top: 20px;
+    margin-left: 693px;
+    align-items: center;
+}
 
+.text_librarycard h2 {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+/*весь контейнер выбора карточек*/
+.librarycard_all {
+    width: 1440px;
+    height: 614px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.find_box {
+    width: 600px;
+    height: 453px;
+}
+.find_box p {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.find_box p input {
+    border: none;
+    text-align: center;
+    color: #000;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+
+}
+.find {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 453px;
+}
+.check_book {
+    width: 600px;
+height: 386px;
+border: 3px solid #BB945F;
+background: #FFF;
+margin-top: -5px;
+}
+
+.sign_login {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    width: 75px;
+    height: 30px;
+}
+
+.container_sign_login {
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+    margin-left: 286px;
+}
+
+.container_get_you_will {
+    text-align: right;
+    white-space: nowrap;
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 200% */
+    letter-spacing: 0.4px;
+    margin-bottom: 39px;
+}
+
+.get_a_read {
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 166.667% */
+    letter-spacing: 0.6px;
+    text-align: right;
+    margin-bottom: 26px;
+}
+
+/*контейнер справой стороны выбора карточек*/
+.container_get {
+    width: 456px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container_librarycard {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.input_check {
+    width: 520px;
+    height: 66px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background: #FFF;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.box_input {
+    background: #BB945F;
+    width: 560px;
+    height: 272px;
+  margin-left: 15px;
+}
+
+.input_check input {
+    margin-top: 20px;
+    border: none;
+    margin-left: 20px;
+width: 200px;
+    height: 30px;
+}
+
+.name_check {
+    margin-top: 20px;
+    color: #000;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 166.667% */
+    letter-spacing: 0.6px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+.check_the_card input {
+    margin-left: 176px;
+    margin-top: 20px;
+    color: #0C0C0E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 242px;
+    height: 44px;
+ 
+}
+
+.input_check ::placeholder {
+    color: #8E8E8E;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 166.667% */
+    letter-spacing: 0.6px;
+}
+.find_box p {
+    margin-bottom: 30px;
+}
+.check_the_card {
+    margin-bottom: 30px;
+}
+input:hover {
+    background-color: #BB945F;
+    transition: background-color .6s linear; }
