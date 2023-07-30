@@ -833,7 +833,8 @@ input[type='radio'] {
     line-height: 40px;
     /* 200% */
     letter-spacing: 2px;
-    text-transform: capitalize;
+    text-transform: capitalize
+   
 }
 
 .ouradress {
@@ -1093,7 +1094,7 @@ input[type='radio'] {
     margin-bottom: 30px;
 }
 
-input:hover {
+input :hover {
     background-color: #BB945F;
     transition: background-color .6s linear;
 }
@@ -1172,7 +1173,7 @@ input:hover {
     white-space: nowrap;
 }
 
-.adress a {
+.adress_footer a {
     text-decoration: none;
     color: #FFF;
     font-family: Inter;
@@ -1182,7 +1183,7 @@ input:hover {
     line-height: 20px;
     cursor: pointer;
 }
-.adress a:hover {
+.adress_footer a:hover {
     background-color: #BB945F;
     transition: background-color .6s linear;
 }
