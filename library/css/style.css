@@ -253,7 +253,7 @@ html {
 /*ставим на место кнопки*/
 .shelder {
     padding-left: 686px;
-    padding-top: 33px;
+    padding-top: 40px;
 }
 
 /*кнопки стилизация*/
@@ -1237,4 +1237,7 @@ input:hover {
     list-style-type: none;
     display: inline;
     margin-left: 6px;
+}
+.rs div {
+    margin-left: 105px;
 }
