@@ -254,6 +254,8 @@ html {
 .shelder {
     padding-left: 686px;
     padding-top: 40px;
+    display: flex;
+    gap: 10px;
 }
 
 /*кнопки стилизация*/
