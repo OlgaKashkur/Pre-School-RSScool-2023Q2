@@ -68,7 +68,7 @@ html {
 .coat {
     height: 90px;
     background: #0C0C0E;
-   
+
 }
 
 /*заголовок header */
@@ -83,6 +83,7 @@ html {
     width: 294px;
     height: 50px;
     margin-left: 20px;
+    white-space: nowrap;
 }
 
 /*размещение навигации горизонтально с отступами 30 */
@@ -124,9 +125,9 @@ html {
 
 /*контейнер для навигации всесте скартинкой*/
 .navprofil {
-    justify-content: space-between;
+    justify-content:flex-end;
     display: flex;
-    width: 672px;
+    gap: 40px;
 }
 
 /*размещение картинки в ее же диве*/
@@ -148,6 +149,10 @@ html {
 .about {
     height: 1436px;
     background: #FFF;
+}
+.about_cards_text {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*создание градиента на картинки и вставка картинки*/
@@ -234,7 +239,7 @@ html {
 
 /*контейнер для картинок*/
 .container_cards_about {
-   
+
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -255,13 +260,18 @@ html {
 
 /*ставим на место кнопки*/
 .shelder {
-   
     padding-top: 40px;
     display: flex;
     gap: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 68px;
+    width: 120px;
+}
+.conteiner_switch_shelder{
+    display: flex;
+}
+.carret {
+    display: none;
 }
 
 /*кнопки стилизация*/
@@ -283,9 +293,15 @@ html {
     accent-color: #BB945F;
     background-color: #BB945F;
 }
+.shelder input:nth-child(4){
+    display: none;
+}
+.shelder input:nth-child(5){
+    display: none;
+}
 
 .favorites_ {
-   
+
     background: #FFF;
 }
 
@@ -302,7 +318,7 @@ html {
     width: 50px;
     height: 1px;
     background: #0C0C0E;
-        margin-top: 20px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -366,6 +382,8 @@ input[type='radio'] {
 .favorites_input {
     margin-left: 20px;
     margin-top: 40px;
+    display: flex;
+    gap: 4px;
 }
 
 /*подсветка кнопок при наведении favorites*/
@@ -380,6 +398,7 @@ input[type='radio'] {
     box-shadow: 0 0 0 5px #f5ede9;
     cursor: pointer;
 }
+
 
 /*карточки на покупки книг*/
 .books_winter {
@@ -491,6 +510,7 @@ input[type='radio'] {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .wi
 
 /*карточки весна */
@@ -590,8 +610,10 @@ input[type='radio'] {
     margin-left: auto;
     margin-right: auto;
 }
-.coffeeshop_cards_text{
-    margin-left: 20px;
+
+.coffeeshop_cards_text {
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .coffeeshop_cards_text h2 {
@@ -722,6 +744,7 @@ input[type='radio'] {
 .prisces {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cakes_name {
@@ -751,7 +774,7 @@ input[type='radio'] {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 /*создание черты под текстом адрес*/
@@ -849,7 +872,6 @@ input[type='radio'] {
     /* 200% */
     letter-spacing: 2px;
     text-transform: capitalize
-   
 }
 
 .ouradress {
@@ -904,7 +926,7 @@ input[type='radio'] {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .text_librarycard h2 {
@@ -990,7 +1012,7 @@ input[type='radio'] {
 
 .container_get_you_will {
     text-align: right;
-    white-space: nowrap;
+    white-space: wrap;
     color: #000;
     text-align: right;
     font-family: Inter;
@@ -1128,8 +1150,8 @@ input:hover {
     display: flex;
     justify-content: space-between;
     width: 120px;
-   flex-wrap: wrap;
-   flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .icon_time2 {
@@ -1199,6 +1221,7 @@ input:hover {
     line-height: 20px;
     cursor: pointer;
 }
+
 .adress_footer:hover {
     background-color: #BB945F;
     transition: background-color .6s linear;
@@ -1244,11 +1267,13 @@ input:hover {
     /* 100% */
     letter-spacing: 2px;
 }
+
 .container_icon li {
     list-style-type: none;
     display: inline;
     margin-left: 6px;
 }
+
 .rs div {
     margin-left: 105px;
 }
@@ -1260,51 +1285,63 @@ input:hover {
     position: relative;
     top: 20px;
     right: 20px;
-    display: none; /*скрываем бургер при 1440*/
+    display: none;
+    /*скрываем бургер при 1440*/
 }
+
 /*стили для линий бургера*/
 .burger_line {
-     display: block;
+    display: block;
     width: 100%;
     height: 2px;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     position: absolute;
     left: 0;
 }
+
 .burger_line_a {
     top: 0;
 }
+
 .burger_line_b {
     top: 50%;
-    transform: translateY(-50%); /*что бы линии были по центру*/
+    transform: translateY(-50%);
+    /*что бы линии были по центру*/
 }
+
 .burger_line_c {
     bottom: 0;
 }
+
 .logo_second {
     display: none;
 }
+
 /*finish бургера*/
 /*start media*/
 @media screen and (max-width: 1024px) {
-    .header_burger { 
+    .header_burger {
         display: block;
     }
+
     .header_nav {
         position: fixed;
         width: 332px;
         height: 570px;
         top: 0;
-        right: 0;
+        right: 0px;
         background-color: #000;
         z-index: 10;
         padding: 100px 107px;
-        transform: translateX(150%);
-        transition: 0.2s; /*что бы выезжало меню плавно при 768*/
+        transform: translateX(100%);
+        transition: 0.2s;
+        /*что бы выезжало меню плавно при 768*/
     }
+
     .header_nav_active {
         transform: translateX(0);
     }
+
     .navlist {
         width: 100%;
         display: flex;
@@ -1312,17 +1349,19 @@ input:hover {
         align-items: center;
         gap: 30px;
     }
+
     .navinfo {
         white-space: nowrap;
         margin-right: 0;
     }
+
     .logo_second {
         display: block;
         position: absolute;
         top: 31px;
         right: 92px;
     }
-       
+
     .header_nav_close {
         width: 32px;
         height: 32px;
@@ -1330,63 +1369,138 @@ input:hover {
         top: 31px;
         right: 20px;
     }
+
     .nav_close_line {
         display: block;
         height: 2px;
         background-color: #FFF;
         position: absolute;
-        top: 50%;  /*что бы линии были по центру*/
+        top: 50%;
+        /*что бы линии были по центру*/
         width: 100%;
     }
+
     .nav_close_line:first-child {
-    transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
     }
+
     .nav_close_line:last-child {
         transform: translateY(-50%) rotate(-45deg);
-    } 
+    }
+
     .container_cards_about img:last-child {
         display: none;
     }
+         /*открытие импутов при 1024*/
+    .shelder input:nth-child(4){
+        display: block;
+    }
+    .shelder input:nth-child(5){
+        display: block;
+    }
+
     .books {
-       
+
         justify-content: center;
     }
-   .book_img {
-    margin-left: -140px;
-   }
-   .adress img {
-    margin: 0 auto;
-   }
-   .find {
-    margin-left: auto;
-    margin-right: auto;
-   }  
-   .get {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 21px;
-   } 
-   .container_get{
-    .align-items: center;
-   }
-   .get_a_read {
-    text-align: center;
-   }
 
-   .container_get_you_will {
-    text-align: center;
-   }
-   .container_sign_login {
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .container_footer {
-    margin-top: 20px;
-   }
-   
+    .book_img {
+        margin-left: -140px;
+    }
 
-    
+    .adress img {
+        margin: 0 auto;
+    }
+
+    .find {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .get {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 21px;
+    }
+
+    .container_get {
+        .align-items: center;
+    }
+
+    .get_a_read {
+        text-align: center;
+    }
+
+    .container_get_you_will {
+        text-align: center;
+    }
+
+    .container_sign_login {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_footer {
+        margin-top: 20px;
+    }
 }
+@media screen and (max-width: 768px) {
+    .container_cards_about img:nth-child(2){
+        display: none;
+    } 
+    .container_cards_about{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container_cards_about img{
+        margin-right: 0;
+    }
+    .carret{
+        display: block;
+    }
+    .conteiner_switch_shelder {
+        gap: 58px;
+        margin-left: 77px;
+    }
+    .prisces .cakes {
+        margin-left: 250px;
+    }
+    .shelder {
+        padding-top: 25px;
+    }
+    .conteiner_switch_shelder .carret {
+margin-top: 20px;
+    }
+    .favorites_ {
+        margin-top: 50px;
+    }
+    .books{
+        margin-left: 20px;
+    }
 
+    .coffeeshop {
+        margin-top: 40px;
+    }
+    .coffeeshop_cards_text h2 {
+        padding-right: 0px;
+    }
+    .text_librarycard{
+        margin-top: 65px;
+    }
+.container_get {
+    width: 600px;
+}
+.get_a_read{
+    margin-bottom: 30px;
+}
+.container_footer{
+    margin-top: 45px;
+}
+.rs div {
+    margin-left: 30px;
+}
+.container_icon {
+    margin-left: -5px;
+}
 
 /*finish media*/
