@@ -62,6 +62,7 @@ html {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 px;
+    overflow-x: hidden;
 }
 
 /*обертка header */
@@ -1320,6 +1321,7 @@ input:hover {
 /*finish бургера*/
 /*start media*/
 @media screen and (max-width: 1024px) {
+   
     .header_burger {
         display: block;
     }
@@ -1329,11 +1331,11 @@ input:hover {
         width: 332px;
         height: 570px;
         top: 0;
-        right: 0px;
+        left: 68%;
         background-color: #000;
         z-index: 10;
         padding: 100px 107px;
-        transform: translateX(100%);
+        transform: translateX(150%);
         transition: 0.2s;
         /*что бы выезжало меню плавно при 768*/
     }
@@ -1445,6 +1447,28 @@ input:hover {
     }
 }
 @media screen and (max-width: 768px) {
+    .header_burger {
+        display: block;
+    }
+
+    .header_nav {
+        position: fixed;
+        width: 332px;
+        height: 570px;
+        top: 0;
+        left: 58%;
+        background-color: #000;
+        z-index: 10;
+        padding: 100px 107px;
+        transform: translateX(150%);
+        transition: 0.2s;
+        /*что бы выезжало меню плавно при 768*/
+    }
+
+    .header_nav_active {
+        transform: translateX(0);
+    }
+    
     .container_cards_about img:nth-child(2){
         display: none;
     } 
@@ -1462,9 +1486,7 @@ input:hover {
         gap: 58px;
         margin-left: 77px;
     }
-    .prisces .cakes {
-        margin-left: 250px;
-    }
+    
     .shelder {
         padding-top: 25px;
     }
@@ -1501,6 +1523,11 @@ margin-top: 20px;
 }
 .container_icon {
     margin-left: -5px;
+}
+.prisces:last-child{
+    display: flex;
+    justify-content: end;
+}
 }
 
 /*finish media*/
