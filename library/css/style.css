@@ -59,7 +59,7 @@ html {
 /* header */
 .header {
     /* выравнивание header по центу и 1440 размер */
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 px;
 }
@@ -204,7 +204,7 @@ html {
 /*размещение текста about*/
 .text_about h2 {
     margin-top: 20px;
-    margin-left: 667px;
+    text-align: center;
 }
 
 /*создание черты под текстом about*/
@@ -216,6 +216,8 @@ html {
     background: #0C0C0E;
     margin-left: 28px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about_cards_text h2 {
@@ -232,12 +234,13 @@ html {
 
 /*контейнер для картинок*/
 .container_cards_about {
-    height: 560px;
+   
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*картинки с отступами справа*/
@@ -252,10 +255,13 @@ html {
 
 /*ставим на место кнопки*/
 .shelder {
-    padding-left: 686px;
+   
     padding-top: 40px;
     display: flex;
     gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68px;
 }
 
 /*кнопки стилизация*/
@@ -279,14 +285,14 @@ html {
 }
 
 .favorites_ {
-    height: 1439px;
+   
     background: #FFF;
 }
 
 /*размещение текста Favorites*/
 .text_favorites h2 {
     margin-top: 20px;
-    margin-left: 640px;
+    text-align: center;
 }
 
 /*создание черты под текстом Favorites*/
@@ -296,8 +302,9 @@ html {
     width: 50px;
     height: 1px;
     background: #0C0C0E;
-    margin-left: 55px;
-    margin-top: 20px;
+        margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text_favorites {
@@ -484,6 +491,7 @@ input[type='radio'] {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.wi
 
 /*карточки весна */
 .books_spring {
@@ -579,6 +587,11 @@ input[type='radio'] {
     background: #0C0C0E;
     margin-left: 85px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.coffeeshop_cards_text{
+    margin-left: 20px;
 }
 
 .coffeeshop_cards_text h2 {
@@ -591,7 +604,8 @@ input[type='radio'] {
     line-height: 40px;
     /* 200% */
     letter-spacing: 2px;
-
+    padding-right: 20px;
+    white-space: wrap;
 }
 
 .text_coffeeshop {
@@ -604,14 +618,15 @@ input[type='radio'] {
     /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
+    text-align: center;
 }
 
 .coffeeshop {
     background: #FFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
+    margin-top: 53px;
 }
 
 /*название раздела с ценами*/
@@ -679,6 +694,7 @@ input[type='radio'] {
     width: 438px;
     margin-top: 40px;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .cakes {
@@ -688,6 +704,7 @@ input[type='radio'] {
     width: 482px;
     margin-top: 40px;
     gap: 40px;
+    margin-right: 20px;
 }
 
 /*контейнер с элементами с ценой*/
@@ -705,8 +722,6 @@ input[type='radio'] {
 .prisces {
     display: flex;
     justify-content: space-between;
-    width: 1400px;
-    height: 520px;
 }
 
 .cakes_name {
@@ -842,13 +857,12 @@ input[type='radio'] {
     flex-direction: column;
     gap: 20px;
     justify-content: space-between;
-
+    margin-right: 190px;
 }
 
 .adress {
     display: flex;
     justify-content: space-between;
-    width: 1400px;
     flex-wrap: wrap;
 }
 
@@ -888,8 +902,9 @@ input[type='radio'] {
     height: 1px;
     background: #0C0C0E;
     margin-top: 20px;
-    margin-left: 693px;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .text_librarycard h2 {
@@ -908,7 +923,6 @@ input[type='radio'] {
 
 /*весь контейнер выбора карточек*/
 .librarycard_all {
-    height: 614px;
     display: flex;
     flex-direction: column;
 }
@@ -1016,6 +1030,8 @@ input[type='radio'] {
     justify-content: space-between;
     flex-direction: row;
     margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
 }
 
 .input_check {
@@ -1137,6 +1153,7 @@ input:hover {
     flex-direction: column;
     height: 250px;
     background: #0C0C0E;
+    margin-top: 81px;
 }
 
 /*создание черты под текстом выбором карточек*/
@@ -1269,7 +1286,7 @@ input:hover {
 }
 /*finish бургера*/
 /*start media*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .header_burger { 
         display: block;
     }
@@ -1327,10 +1344,45 @@ input:hover {
     .nav_close_line:last-child {
         transform: translateY(-50%) rotate(-45deg);
     } 
-   
-   
-    
-   
+    .container_cards_about img:last-child {
+        display: none;
+    }
+    .books {
+       
+        justify-content: center;
+    }
+   .book_img {
+    margin-left: -140px;
+   }
+   .adress img {
+    margin: 0 auto;
+   }
+   .find {
+    margin-left: auto;
+    margin-right: auto;
+   }  
+   .get {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+   } 
+   .container_get{
+    .align-items: center;
+   }
+   .get_a_read {
+    text-align: center;
+   }
+
+   .container_get_you_will {
+    text-align: center;
+   }
+   .container_sign_login {
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .container_footer {
+    margin-top: 20px;
+   }
    
 
     
