@@ -126,7 +126,7 @@ html {
 
 /*контейнер для навигации всесте скартинкой*/
 .navprofil {
-    justify-content:flex-end;
+    justify-content: flex-end;
     display: flex;
     gap: 40px;
 }
@@ -151,6 +151,7 @@ html {
     height: 1436px;
     background: #FFF;
 }
+
 .about_cards_text {
     margin-left: 20px;
     margin-right: 20px;
@@ -268,9 +269,11 @@ html {
     margin-right: auto;
     width: 120px;
 }
-.conteiner_switch_shelder{
+
+.conteiner_switch_shelder {
     display: flex;
 }
+
 .carret {
     display: none;
 }
@@ -294,10 +297,12 @@ html {
     accent-color: #BB945F;
     background-color: #BB945F;
 }
-.shelder input:nth-child(4){
+
+.shelder input:nth-child(4) {
     display: none;
 }
-.shelder input:nth-child(5){
+
+.shelder input:nth-child(5) {
     display: none;
 }
 
@@ -412,6 +417,7 @@ input[type='radio'] {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    position: relative;
 }
 
 .staff {
@@ -467,10 +473,6 @@ input[type='radio'] {
     width: 355px;
 }
 
-.buy_botton {
-    margin-top: 15px;
-}
-
 .button_buy {
     width: 75px;
     height: 30px;
@@ -494,15 +496,22 @@ input[type='radio'] {
 }
 
 .book_img {
-    padding-top: 295px;
-    margin-left: -334px;
-    padding-right: 20px;
+    position: absolute;
+    z-index: 5;
+    margin-left: 365px;
+    padding-top: 256px;
 }
-
+.books>div:last-of-type {
+    margin-right: 60px;
+}
+.books>div:nth-child(2) {
+    margin-right: 60px;
+}
 /*отступы для кнопок в карточках для привязки в одном месте*/
-.books_winter>div:last-of-type {
-    margin-top: auto;
-    padding-bottom: 15px;
+.buy_botton{
+position: absolute;
+margin-left: -5px;
+margin-top: 510px;
 }
 
 /*контейнер для карточек */
@@ -512,7 +521,6 @@ input[type='radio'] {
     justify-content: space-between;
 }
 
-.wi
 
 /*карточки весна */
 .books_spring {
@@ -1181,13 +1189,13 @@ input:hover {
 
 /*создание черты под текстом выбором карточек*/
 .line_footer {
-    width: 1400px;
     height: 1px;
-    background: #dcdceb;
+    background-color: #dcdceb;
     margin-top: 20px;
     align-items: center;
     margin-left: 20px;
     margin-top: 25px;
+    margin-right: 20px;
 }
 
 .time2 {
@@ -1321,7 +1329,7 @@ input:hover {
 /*finish бургера*/
 /*start media*/
 @media screen and (max-width: 1024px) {
-   
+
     .header_burger {
         display: block;
     }
@@ -1393,22 +1401,20 @@ input:hover {
     .container_cards_about img:last-child {
         display: none;
     }
-         /*открытие импутов при 1024*/
-    .shelder input:nth-child(4){
+
+    /*открытие импутов при 1024*/
+    .shelder input:nth-child(4) {
         display: block;
     }
-    .shelder input:nth-child(5){
+
+    .shelder input:nth-child(5) {
         display: block;
     }
 
     .books {
-
         justify-content: center;
     }
 
-    .book_img {
-        margin-left: -140px;
-    }
 
     .adress img {
         margin: 0 auto;
@@ -1446,6 +1452,7 @@ input:hover {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .header_burger {
         display: block;
@@ -1468,66 +1475,94 @@ input:hover {
     .header_nav_active {
         transform: translateX(0);
     }
-    
-    .container_cards_about img:nth-child(2){
+
+    .container_cards_about img:nth-child(2) {
         display: none;
-    } 
-    .container_cards_about{
+    }
+
+    .container_cards_about {
         margin-left: 0;
         margin-right: 0;
     }
-    .container_cards_about img{
+
+    .container_cards_about img {
         margin-right: 0;
     }
-    .carret{
+
+    .carret {
         display: block;
     }
+
     .conteiner_switch_shelder {
         gap: 58px;
         margin-left: 77px;
     }
-    
+
     .shelder {
         padding-top: 25px;
     }
+
     .conteiner_switch_shelder .carret {
-margin-top: 20px;
+        margin-top: 20px;
     }
+
     .favorites_ {
-        margin-top: 50px;
+        margin-top: 45px;
     }
-    .books{
+
+    .books {
         margin-left: 20px;
+    }
+    .books_winter {
+        margin-right: 75px;
     }
 
     .coffeeshop {
-        margin-top: 40px;
+        margin-top: 60px;
     }
+
     .coffeeshop_cards_text h2 {
         padding-right: 0px;
+        padding-left: 0px;
     }
-    .text_librarycard{
-        margin-top: 65px;
+
+    .adress img {
+        padding-top: 65px;
     }
-.container_get {
-    width: 600px;
-}
-.get_a_read{
-    margin-bottom: 30px;
-}
-.container_footer{
-    margin-top: 45px;
-}
-.rs div {
-    margin-left: 30px;
-}
-.container_icon {
-    margin-left: -5px;
-}
-.prisces:last-child{
-    display: flex;
-    justify-content: end;
-}
+    .container_get {
+        width: 600px;
+    }
+
+    .get_a_read {
+        margin-bottom: 30px;
+    }
+    .container_sign_login {
+        padding-top: 5px;
+    }
+    .container_footer {
+        margin-top: 40px;
+    }
+
+    .rs div {
+        margin-left: 30px;
+    }
+    .line_footer
+
+    .container_icon {
+        margin-left: -5px;
+    }
+
+    .prisces:last-child {
+        display: flex;
+        justify-content: end;
+    }
+    .cakes {
+        margin-left: 45%;
+        margin-right: 0;
+    }
+    .prisces_coffee {
+        margin-right: 39%;
+    }
 }
 
 /*finish media*/
