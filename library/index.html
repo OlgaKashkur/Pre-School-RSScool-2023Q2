@@ -16,7 +16,7 @@
         <div class="coat">
             <h1>Brooklyn Public Library</h1>
             <div class="navprofil">
-                <nav>
+                <nav class="header_nav">
                     <ul class="navlist">
                         <li class="navinfo"><a href="#about">About</a></li>
                         <li class="navinfo"><a href="#favorites">Favorites</a></li>
@@ -24,9 +24,21 @@
                         <li class="navinfo"><a href="#contacts">Contacts</a></li>
                         <li class="navinfo"><a href="#librarycard">Library Card</a></li>
                     </ul>
+                    <div class="logo_second">
+                        <img src="./img/icon_profile.svg" alt="icon_profile">
+                    </div>
+                    <div class="header_nav_close">
+                        <span class="nav_close_line"></span>
+                        <span class="nav_close_line"></span>
+                    </div>
                 </nav>
                 <div class="logo">
                     <img src="./img/icon_profile.svg" alt="icon_profile">
+                </div>
+                <div class="header_burger burger">
+                    <span class="burger_line burger_line_a"></span>
+                    <span class="burger_line burger_line_b"></span>
+                    <span class="burger_line burger_line_c"></span>
                 </div>
             </div>
         </div>
@@ -48,20 +60,25 @@
                     <h2>The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside
                     </h2>
                 </div>
-                <div class="container_cards_about">
-                    <img src="../library/img/slider1/image1.jpg" alt="image 1">
-                    <img src="../library/img/slider1/image2.jpg" alt="image 2">
-                    <img src="../library/img/slider1/image3.jpg" alt="image 3">
-                    <!--<img src="../library/img/slider1/image 4.jpg" alt="image 4">
+                <div class="conteiner_switch_shelder">
+                    <img class="carret" src="./img/Carret_Left.svg" alt="Carret_Left">
+                    <div class="conteintr_shelder_card">
+                        <div class="container_cards_about">
+                            <img src="../library/img/slider1/image1.jpg" alt="image 1">
+                            <img src="../library/img/slider1/image2.jpg" alt="image 2">
+                            <img src="../library/img/slider1/image3.jpg" alt="image 3">
+                            <!--<img src="../library/img/slider1/image 4.jpg" alt="image 4">
                                             <img src="../library/img/slider1/image5.jpg" alt="image 5">-->
-                </div>
-                <div class="shelder">
-                    <input class="inputcolor" type="radio" name="point" id="slide1" checked>
-                    <input class="inputcolor" type="radio" name="point" id="slide2">
-                    <input class="inputcolor" type="radio" name="point" id="slide3">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
+                        </div>
+                        <div class="shelder">
+                            <input class="inputcolor" type="radio" name="point" id="slide1" checked>
+                            <input class="inputcolor" type="radio" name="point" id="slide2">
+                            <input class="inputcolor" type="radio" name="point" id="slide3">
+                            <input class="inputcolor" type="radio" name="point" id="slide4">
+                            <input class="inputcolor" type="radio" name="point" id="slide5">
+                        </div>
+                    </div>
+                    <img class="carret" src="./img/Carret_Right.svg" alt="Carret_Right">
                 </div>
             </section>
             <!---магазин книг favorites -->
@@ -102,8 +119,9 @@
                                     <div class="buy_botton">
                                         <button class="button_buy">Buy</button>
                                     </div>
-                                </div>
-                                <div class="book_img"><img src="./img/book1.jpg" alt="The Book Eaters By Sunyi Dean">
+                                    <div class="book_img"><img src="./img/book1.jpg"
+                                            alt="The Book Eaters By Sunyi Dean">
+                                    </div>
                                 </div>
                                 <div class="books_winter">
                                     <p class="staff">Staff Picks</p>
@@ -116,8 +134,9 @@
                                     <div class="buy_botton">
                                         <button class="button_buy">Buy</button>
                                     </div>
-                                </div>
-                                <div class="book_img"><img src="./img/book2.jpg" alt="The Book Eaters By Sunyi Dean">
+                                    <div class="book_img"><img src="./img/book2.jpg"
+                                            alt="The Book Eaters By Sunyi Dean">
+                                    </div>
                                 </div>
                                 <div class="books_winter">
                                     <p class="staff">Staff Picks</p>
@@ -134,8 +153,9 @@
                                     <div class="buy_botton">
                                         <button class="button_buy">Buy</button>
                                     </div>
-                                </div>
-                                <div class="book_img"><img src="./img/book3.jpg" alt="The Book Eaters By Sunyi Dean">
+                                    <div class="book_img"><img src="./img/book3.jpg"
+                                            alt="The Book Eaters By Sunyi Dean">
+                                    </div>
                                 </div>
                                 <div class="books_winter">
                                     <p class="staff">Staff Picks</p>
@@ -149,8 +169,9 @@
                                     <div class="buy_botton">
                                         <button class="button_buy1" disabled>Own</button>
                                     </div>
-                                </div>
-                                <div class="book_img"><img src="./img/book4.jpg" alt="The Book Eaters By Sunyi Dean">
+                                    <div class="book_img"><img src="./img/book4.jpg"
+                                            alt="The Book Eaters By Sunyi Dean">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -170,10 +191,10 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
+                                <div class="book_img"><img src="./img/book5.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
-                            <div class="book_img"><img src="./img/book5.jpg" alt="The Book Eaters By Sunyi Dean">
-                            </div>
-                            <div class="books_spring">
+                           <div class="books_spring">
                                 <p class="staff">Staff Picks</p>
                                 <p class="the_book">Carry: A Memoir of Survival on Stolen Land
                                     By Toni Jenson</p>
@@ -183,8 +204,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book6.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book6.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_spring">
                                 <p class="staff">Staff Picks</p>
@@ -196,8 +217,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book7.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book7.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_spring">
                                 <p class="staff">Staff Picks</p>
@@ -209,8 +230,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy1" disabled>Own</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book8.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book8.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,8 +251,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book9.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book9.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_summer">
                                 <p class="staff">Staff Picks</p>
@@ -244,8 +265,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book10.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book10.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_summer">
                                 <p class="staff">Staff Picks</p>
@@ -257,10 +278,10 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
+                                <div class="book_img"><img src="./img/book11.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
-                            <div class="book_img"><img src="./img/book11.jpg" alt="The Book Eaters By Sunyi Dean">
-                            </div>
-                            <div class="books_summer">
+                              <div class="books_summer">
                                 <p class="staff">Staff Picks</p>
                                 <p class="the_book">Shark Dialogues: A Novel
                                     By Kiana Davenport</p>
@@ -271,8 +292,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book12.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book12.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -293,8 +314,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book13.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book13.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_autumn">
                                 <p class="staff">Staff Picks</p>
@@ -306,8 +327,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book14.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book14.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_autumn">
                                 <p class="staff">Staff Picks</p>
@@ -320,8 +341,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book15.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book15.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                             <div class="books_autumn">
                                 <p class="staff">Staff Picks</p>
@@ -333,8 +354,8 @@
                                 <div class="buy_botton">
                                     <button class="button_buy">Buy</button>
                                 </div>
-                            </div>
-                            <div class="book_img"><img src="./img/book16.jpg" alt="The Book Eaters By Sunyi Dean">
+                                <div class="book_img"><img src="./img/book16.jpg" alt="The Book Eaters By Sunyi Dean">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -349,9 +370,9 @@
                     <div class="coffeeshop_cards_text">
                         <h2>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos
                             and friendly conversation.
-                            <br>You can get a favorite book and read in coffee shop. Our barista to cook you best
+                            You can get a favorite book and read in coffee shop. Our barista to cook you best
                             coffee, and also you can try desserts
-                            <br>from bakery.
+                            from bakery.
                         </h2>
                         <div class="prisces">
                             <div class="prisces_coffee">
@@ -480,9 +501,9 @@
                             <div class="get">
                                 <div class="container_get">
                                     <p class="get_a_read">Get a reader card</p>
-                                    <p class="container_get_you_will">You will be able to see a reader card after <br>
+                                    <p class="container_get_you_will">You will be able to see a reader card after
                                         logging into account or you can
-                                        register a new <br>account</p>
+                                        register a new account</p>
                                     <div class="container_sign_login">
                                         <input class="sign_login" type="button" value="Sign Up">
                                         <input class="sign_login" type="button" value="Log in">
@@ -494,15 +515,17 @@
                 </div>
             </section>
         </div>
-        
-        
+
+
     </main>
     <footer>
         <div class="header">
             <div class="container_footer">
                 <div class="adress_time1">
                     <div class="adress_footer">
-                        <p><a href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/data=!4m2!3m1!1s0x89c25a49b649b8c3:0x6342a2291cea2e?sa=X&ved=2ahUKEwjNr6rz4LmAAxW9FRAIHaddAgkQ8gF6BAgPEAA&ved=2ahUKEwjNr6rz4LmAAxW9FRAIHaddAgkQ8gF6BAgQEAI">286 Cadman Plaza, New York,<br> NY 11238, United States</a></p>
+                        <p><a
+                                href="https://www.google.com/maps/place/286+Cadman+Plaza+W,+Brooklyn,+NY+11201,+%D0%A1%D0%A8%D0%90/data=!4m2!3m1!1s0x89c25a49b649b8c3:0x6342a2291cea2e?sa=X&ved=2ahUKEwjNr6rz4LmAAxW9FRAIHaddAgkQ8gF6BAgPEAA&ved=2ahUKEwjNr6rz4LmAAxW9FRAIHaddAgkQ8gF6BAgQEAI">286
+                                Cadman Plaza, New York,<br> NY 11238, United States</a></p>
                     </div>
                     <div class="time1">
                         <p>Mon - Fri
@@ -538,6 +561,7 @@
             </div>
         </div>
     </footer>
+    <script src="./css/main.js">  </script>
 </body>
 
 </html>
