@@ -1472,6 +1472,12 @@ input:hover {
         /*что бы выезжало меню плавно при 768*/
     }
 
+    .logo_second {
+        display: block;
+        position: absolute;
+        top: 31px;
+        right: 105px;
+    }
     .header_nav_active {
         transform: translateX(0);
     }
