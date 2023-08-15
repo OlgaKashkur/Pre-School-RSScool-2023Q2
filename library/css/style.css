@@ -136,6 +136,7 @@ html {
     margin-top: 12px;
     margin-bottom: 12px;
     margin-right: 20px;
+    z-index: 18;
 }
 
 /*контейнер для заголовка и навишации + картинка (контейнер их)
@@ -1322,11 +1323,10 @@ input:hover {
     bottom: 0;
 }
 
-.logo_second {
-    display: none;
-}
 
 /*finish бургера*/
+
+
 /*start media*/
 @media screen and (max-width: 1024px) {
 
@@ -1365,15 +1365,8 @@ input:hover {
         margin-right: 0;
     }
 
-    .logo_second {
-        display: block;
-        position: absolute;
-        top: 31px;
-        right: 92px;
-    }
-
-    .header_nav_close {
-        width: 32px;
+       .header_nav_close {
+        width: 45px;
         height: 32px;
         position: absolute;
         top: 31px;
@@ -1413,6 +1406,8 @@ input:hover {
 
     .books {
         justify-content: center;
+        flex-direction: column;
+        padding-left: 200px;
     }
 
 
@@ -1451,6 +1446,19 @@ input:hover {
     .container_footer {
         margin-top: 20px;
     }
+    
+}
+
+@media screen and (max-width: 1439px){
+    .container_cards_about img:last-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 990px){
+    .container_cards_about img:nth-child(2) {
+        display: none;
+        
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1463,7 +1471,7 @@ input:hover {
         width: 332px;
         height: 570px;
         top: 0;
-        left: 58%;
+        left: 55%;
         background-color: #000;
         z-index: 10;
         padding: 100px 107px;
@@ -1472,12 +1480,7 @@ input:hover {
         /*что бы выезжало меню плавно при 768*/
     }
 
-    .logo_second {
-        display: block;
-        position: absolute;
-        top: 31px;
-        right: 105px;
-    }
+  
     .header_nav_active {
         transform: translateX(0);
     }
@@ -1517,7 +1520,8 @@ input:hover {
     }
 
     .books {
-        margin-left: 20px;
+        flex-direction: column;
+        padding-left: 70px;
     }
     .books_winter {
         margin-right: 75px;
