@@ -10,3 +10,11 @@
         menu.classList.remove('header_nav_active');
     });
 }());
+
+document.querySelectorAll('.navinfo').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.header_nav').classList.remove('header_nav_active');
+        document.querySelector('.header_burger').classList.remove('header_nav_active');
+        document.body.classList.remove('lock');
+    })
+})
