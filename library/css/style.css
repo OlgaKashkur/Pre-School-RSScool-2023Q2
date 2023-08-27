@@ -149,8 +149,7 @@ html {
 
 /*секция about размеры ее*/
 .about {
-    height: 1436px;
-    background: #FFF;
+     background: #FFF;
 }
 
 .about_cards_text {
@@ -242,18 +241,27 @@ html {
 
 /*контейнер для картинок*/
 .container_cards_about {
-
+    
     margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    max-height: 560px;
+    overflow: visible;
+    text-align: center;
+    min-width: 1440px;
+    gap: 25px;
+    transition: all 1s;
+}
+.conteiner_shelder {
+    width: 1420px;
+    overflow: hidden;
+    margin-left: 10px;
 }
 
 /*картинки с отступами справа*/
 .container_cards_about img {
-    margin-right: 25px;
+ 
+    width: 450px;
 }
 
 /*последняя картинка без отступа*/
@@ -269,14 +277,25 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 120px;
+    justify-content: center;
 }
 
 .conteiner_switch_shelder {
     display: flex;
+   
 }
 
-.carret {
+.carret_left {
     display: none;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+}
+.carret_right {
+    display: none;
+    border: none;
+    outline: none;
+    background-color: #FFF;
 }
 
 /*кнопки стилизация*/
@@ -308,7 +327,7 @@ html {
 }
 
 .favorites_ {
-
+    margin-top: 60px;
     background: #FFF;
 }
 
@@ -1288,6 +1307,8 @@ input:hover {
     margin-left: 105px;
 }
 
+
+
 /*создание бургера*/
 .header_burger {
     width: 45px;
@@ -1391,10 +1412,7 @@ input:hover {
         transform: translateY(-50%) rotate(-45deg);
     }
 
-    .container_cards_about img:last-child {
-        display: none;
-    }
-
+    
     /*открытие импутов при 1024*/
     .shelder input:nth-child(4) {
         display: block;
@@ -1402,6 +1420,14 @@ input:hover {
 
     .shelder input:nth-child(5) {
         display: block;
+    }
+
+    .carret_left {
+        display: block;
+    }
+    .carret_right {
+        display: block;
+       
     }
 
     .books {
@@ -1449,18 +1475,6 @@ input:hover {
     
 }
 
-@media screen and (max-width: 1439px){
-    .container_cards_about img:last-child {
-        display: none;
-    }
-}
-@media screen and (max-width: 990px){
-    .container_cards_about img:nth-child(2) {
-        display: none;
-        
-    }
-}
-
 @media screen and (max-width: 768px) {
     .header_burger {
         display: block;
@@ -1485,38 +1499,52 @@ input:hover {
         transform: translateX(0);
     }
 
-    .container_cards_about img:nth-child(2) {
-        display: none;
-    }
-
     .container_cards_about {
         margin-left: 0;
+          max-height: 560px;
+      display: flex;
+      overflow: visible;
+      transition: all 1s;
+    }
+    .conteiner_shelder {
+        max-width: 450px;
+        overflow: hidden;
+        margin-left: -10px;
+    }
+     
+      .container_cards_about img {
         margin-right: 0;
     }
 
-    .container_cards_about img {
-        margin-right: 0;
-    }
-
-    .carret {
+    .carret_left {
         display: block;
+    }
+    .carret_right {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 5px;
+        margin-right: 100px;
     }
 
     .conteiner_switch_shelder {
         gap: 58px;
         margin-left: 77px;
+        max-width: 614px;
     }
 
     .shelder {
         padding-top: 25px;
     }
 
-    .conteiner_switch_shelder .carret {
+    .conteiner_switch_shelder .carret_left {
+        margin-top: 20px;
+    }
+    .conteiner_switch_shelder .carret_right {
         margin-top: 20px;
     }
 
     .favorites_ {
-        margin-top: 45px;
+        margin-top: 60px;
     }
 
     .books {
@@ -1576,3 +1604,4 @@ input:hover {
 }
 
 /*finish media*/
+
