@@ -41,12 +41,14 @@ function rightShelder() {
     shelderCount = shelderCount + 1;
     if (shelderCount >= containerCardsAboutImg.length) shelderCount = 0;
     rollShelder();
+    thisSheldr (shelderCount);
 }
 //счетчик назад
 function leftShelder() {
     shelderCount = shelderCount - 1;
     if (shelderCount < 0 ) shelderCount = containerCardsAboutImg.length - 1;
     rollShelder();
+    thisSheldr (shelderCount);
 
 }
 //передвижение картинки на расстояние 470px
@@ -55,10 +57,10 @@ containerCardsAbout.style.transform = `translateX(${-shelderCount*470}px)`;
 }
 
 
-//для работы кнопок внизу, меняет цвет
+//для работы кнопок внизу, меняет цвет active не прописала в css
 function thisSheldr (index) {
-    inputcolor.forEach(item => item.classList.remove('input[type="radio"]checked'));
-    inputcolor[index].classList.add('input[type="radio"]checked');
+    inputcolor.forEach(item => item.classList.remove('active'));
+    inputcolor[index].classList.add('active');
 }
 //для работы кнопок внизу, запускает следующую картинку
 inputcolor.forEach((input, index) => {
@@ -72,4 +74,129 @@ inputcolor.forEach((input, index) => {
 
 
 
+
 //Favorites section start
+
+/*const fadeIn = (el, timeout, display) => {
+    el.style.opacity = 0;
+    el.style.display = display || 'block';
+    el.style.transition = `opacity ${timeout}ms`;
+    setTimeout(() => {
+        el.style.opacity = 1;
+    }, 10);
+};
+
+const fadeOut = (el, timeout) => {
+    el.style.opacity = 1;
+    el.style.transition = `opacity ${timeout}ms`;
+    el.style.opacity = 0;
+
+    setTimeout(() => {
+        el.style.display = 'none';
+    }, timeout);
+};
+
+const block = document.querySelector('.page2');
+const btn = document.getElementById('Spring');
+const blockw = document.querySelector('.page1');
+const btnw = document.getElementById('Winter');
+
+
+let flag = false;
+
+
+btn.addEventListener('click', (e) => {
+    if (!flag) {
+        fadeIn(block, 1000, 'flex');
+        flag = true;
+    } else {
+        fadeOut(block, 1000);
+        flag = false;
+    }
+});
+
+
+
+btnw.addEventListener('click', (e) => {
+    if (!flag) {
+        fadeIn(blockw, 1000, 'flex');
+        flag = true;
+    } else {
+        fadeOut(blockw, 1000);
+        flag = false;
+    }
+})
+*/
+function fadeIn(el, timeout) {
+    el.style.opacity = 0;
+    el.style.display = 'flex';
+    el.style.transition = `opacity ${timeout}ms`;
+    setTimeout(() => {
+        el.style.opacity = 1;
+    }, 3000);
+};
+
+function fadeOut(el, timeout){
+    el.style.opacity = 1;
+     el.style.transition = `opacity ${timeout}ms`;
+    el.style.opacity = 0;
+
+    setTimeout(() => {
+        el.style.display = 'none';
+    }, timeout);
+};
+
+
+const blockWinter = document.querySelector('.page1');
+const btnWinter = document.getElementById('Winter');
+const blockSpring = document.querySelector('.page2');
+const btnSpring = document.getElementById('Spring');
+const blockSummer = document.querySelector('.page3');
+const btnSummer = document.getElementById('Summer');
+const blockAutumn = document.querySelector('.page4');
+const btnAutumn = document.getElementById('Autumn');
+
+
+let defaultBlock = true;
+//отображение блока по умолчанию
+if (defaultBlock){
+	fadeIn(blockWinter, 2000);
+}
+
+
+function springFun(){
+	fadeOut(blockWinter, 2000);
+    fadeOut(blockSummer, 2000);
+	fadeOut(blockAutumn, 2000);	
+	fadeIn(blockSpring, 3000);
+	defaultBlock = false;
+}
+
+function winterFun(){
+    fadeOut(blockSpring, 2000);
+    fadeOut(blockSummer, 2000);
+	fadeOut(blockAutumn, 2000);			
+	fadeIn(blockWinter, 3000);
+    } 
+	
+function summerFun(){
+	fadeOut(blockWinter, 2000);
+    fadeOut(blockSpring, 2000);
+	fadeOut(blockAutumn, 2000);
+	fadeIn(blockSummer, 3000);
+	defaultBlock = false;
+    } 
+	
+function autumnFun(){
+	fadeOut(blockWinter, 2000);
+    fadeOut(blockSpring, 2000);
+    fadeOut(blockSummer, 2000);
+	fadeIn(blockAutumn, 3000);
+	defaultBlock = false;
+    } 
+	
+btnSpring.addEventListener('click', springFun);
+btnWinter.addEventListener('click', winterFun);
+btnSummer.addEventListener('click', summerFun);
+btnAutumn.addEventListener('click', autumnFun);
+

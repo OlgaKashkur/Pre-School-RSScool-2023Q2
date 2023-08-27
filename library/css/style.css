@@ -245,7 +245,7 @@ html {
     margin-top: 20px;
     margin-left: 10px;
     display: flex;
-    max-height: 560px;
+
     overflow: visible;
     text-align: center;
     min-width: 1440px;
@@ -312,11 +312,14 @@ html {
 }
 
 /*кнопки стилизация при переходе*/
+
 .shelder input:checked {
     border: 5px solid #BB945F;
     accent-color: #BB945F;
     background-color: #BB945F;
 }
+
+
 
 .shelder input:nth-child(4) {
     display: none;
@@ -424,7 +427,6 @@ input[type='radio'] {
     box-shadow: 0 0 0 5px #f5ede9;
     cursor: pointer;
 }
-
 
 /*карточки на покупки книг*/
 .books_winter {
@@ -553,6 +555,7 @@ margin-top: 510px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    position: relative;
 }
 
 .books_spring>div:last-of-type {
@@ -589,6 +592,7 @@ margin-top: 510px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    position: relative;
 }
 
 .books_summer>div:last-of-type {
@@ -607,6 +611,7 @@ margin-top: 510px;
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    position: relative;
 }
 
 .books_autumn>div:last-of-type {
@@ -615,6 +620,10 @@ margin-top: 510px;
 }
 
 /*блокировка карточек с книгами разделов поры года */
+.page1 {
+    display: none;
+}
+
 .page2 {
     display: none;
 }
@@ -626,6 +635,7 @@ margin-top: 510px;
 .page4 {
     display: none;
 }
+
 
 /*создание черты под текстом coffeeshop*/
 .text_coffeeshop h2:after {
@@ -1368,6 +1378,7 @@ input:hover {
         transition: 0.2s;
         /*что бы выезжало меню плавно при 768*/
     }
+   
 
     .header_nav_active {
         transform: translateX(0);
