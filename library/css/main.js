@@ -127,6 +127,8 @@ btnw.addEventListener('click', (e) => {
     }
 })
 */
+
+//Favorites section start
 function fadeIn(el, timeout) {
     el.style.opacity = 0;
     el.style.display = 'flex';
@@ -199,4 +201,60 @@ btnSpring.addEventListener('click', springFun);
 btnWinter.addEventListener('click', winterFun);
 btnSummer.addEventListener('click', summerFun);
 btnAutumn.addEventListener('click', autumnFun);
+//Favorites section end
 
+
+
+//profil registert start
+
+
+    const logo = document.querySelector('.logo');
+    const profile = document.querySelector('.profile')
+   
+   /*это вызывает но не исчезает ??
+    /*logo.addEventListener('click', function() {
+        profile.classList.add('profile_activ');
+    });
+    /* profile.addEventListener('click', () => {
+        profile.classList.remove('profile_noactiv');
+    });*/
+
+   /*это вызывает но не исчезает
+    /*const toggleProfil = () => {
+        profile.classList.add('profile_activ');
+    }
+    logo.addEventListener('click', e => {
+        e.stopPropagation ();
+        toggleProfil ();
+    });
+
+    /*это только исчезает по другой области кроме нашего дива
+    document.addEventListener('click', function(event) {
+        let e = document.querySelector('.profile_activ');
+        if (!e.contains(event.target)) {e.style.display='none'};
+       
+      });*/
+
+   
+   
+      const toggleProfil = () => {
+        profile.classList.toggle('profile_activ');
+      }
+      
+      logo.addEventListener('click', e => {
+        e.stopPropagation();
+      
+        toggleProfil();
+      });
+      
+      document.addEventListener('click', e => {
+        let target = e.target;
+        let its_profile = target == profile || profile.contains(target);
+        let its_logo = target == logo;
+        let profile_is_active = profile.classList.contains('profile_activ');
+        
+        if (!its_profile && !its_logo && profile_is_active) {
+          toggleProfil();
+        }
+      })
+//profil registert end

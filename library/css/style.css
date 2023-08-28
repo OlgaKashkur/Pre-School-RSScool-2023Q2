@@ -149,7 +149,7 @@ html {
 
 /*секция about размеры ее*/
 .about {
-     background: #FFF;
+    background: #FFF;
 }
 
 .about_cards_text {
@@ -241,7 +241,7 @@ html {
 
 /*контейнер для картинок*/
 .container_cards_about {
-    
+
     margin-top: 20px;
     margin-left: 10px;
     display: flex;
@@ -252,6 +252,7 @@ html {
     gap: 25px;
     transition: all 1s;
 }
+
 .conteiner_shelder {
     width: 1420px;
     overflow: hidden;
@@ -260,7 +261,7 @@ html {
 
 /*картинки с отступами справа*/
 .container_cards_about img {
- 
+
     width: 450px;
 }
 
@@ -282,7 +283,7 @@ html {
 
 .conteiner_switch_shelder {
     display: flex;
-   
+
 }
 
 .carret_left {
@@ -291,6 +292,7 @@ html {
     outline: none;
     background-color: #FFF;
 }
+
 .carret_right {
     display: none;
     border: none;
@@ -523,17 +525,20 @@ input[type='radio'] {
     margin-left: 365px;
     padding-top: 256px;
 }
+
 .books>div:last-of-type {
     margin-right: 60px;
 }
+
 .books>div:nth-child(2) {
     margin-right: 60px;
 }
+
 /*отступы для кнопок в карточках для привязки в одном месте*/
-.buy_botton{
-position: absolute;
-margin-left: -5px;
-margin-top: 510px;
+.buy_botton {
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 510px;
 }
 
 /*контейнер для карточек */
@@ -1357,6 +1362,110 @@ input:hover {
 
 /*finish бургера*/
 
+/*start profile*/
+.profile {
+    width: 80px;
+    height: 115px;
+    background: #FFF;
+    display: none;
+    position: fixed;
+    margin-left: -52px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.profile_activ {
+    display: block;
+
+}
+
+.profile_noactiv {
+    float: left;
+}
+
+.profile span {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.profile span:after {
+    width: 40px;
+    height: 1px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #BB945F;
+    content: "";
+    display: block;
+}
+
+.profile p {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.profile p:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.login {
+position: fixed;
+width: 250px;
+height: 262px;
+background: #FFF;
+margin-left: -223px;
+text-align: center;
+}
+.login span {
+    color: #000;
+text-align: center;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 0.4px;
+text-transform: uppercase;
+}
+.login p {
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.3px;
+}
+.login input {
+    width: 200px;
+height: 20px;
+flex-shrink: 0;
+border: 1px solid #BB945F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*start media*/
 @media screen and (max-width: 1024px) {
@@ -1378,7 +1487,7 @@ input:hover {
         transition: 0.2s;
         /*что бы выезжало меню плавно при 768*/
     }
-   
+
 
     .header_nav_active {
         transform: translateX(0);
@@ -1397,7 +1506,7 @@ input:hover {
         margin-right: 0;
     }
 
-       .header_nav_close {
+    .header_nav_close {
         width: 45px;
         height: 32px;
         position: absolute;
@@ -1423,7 +1532,7 @@ input:hover {
         transform: translateY(-50%) rotate(-45deg);
     }
 
-    
+
     /*открытие импутов при 1024*/
     .shelder input:nth-child(4) {
         display: block;
@@ -1436,9 +1545,10 @@ input:hover {
     .carret_left {
         display: block;
     }
+
     .carret_right {
         display: block;
-       
+
     }
 
     .books {
@@ -1483,7 +1593,8 @@ input:hover {
     .container_footer {
         margin-top: 20px;
     }
-    
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1505,31 +1616,33 @@ input:hover {
         /*что бы выезжало меню плавно при 768*/
     }
 
-  
+
     .header_nav_active {
         transform: translateX(0);
     }
 
     .container_cards_about {
         margin-left: 0;
-          max-height: 560px;
-      display: flex;
-      overflow: visible;
-      transition: all 1s;
+        max-height: 560px;
+        display: flex;
+        overflow: visible;
+        transition: all 1s;
     }
+
     .conteiner_shelder {
         max-width: 450px;
         overflow: hidden;
         margin-left: -10px;
     }
-     
-      .container_cards_about img {
+
+    .container_cards_about img {
         margin-right: 0;
     }
 
     .carret_left {
         display: block;
     }
+
     .carret_right {
         display: block;
         margin-left: 0px;
@@ -1550,6 +1663,7 @@ input:hover {
     .conteiner_switch_shelder .carret_left {
         margin-top: 20px;
     }
+
     .conteiner_switch_shelder .carret_right {
         margin-top: 20px;
     }
@@ -1562,6 +1676,7 @@ input:hover {
         flex-direction: column;
         padding-left: 70px;
     }
+
     .books_winter {
         margin-right: 75px;
     }
@@ -1578,6 +1693,7 @@ input:hover {
     .adress img {
         padding-top: 65px;
     }
+
     .container_get {
         width: 600px;
     }
@@ -1585,9 +1701,11 @@ input:hover {
     .get_a_read {
         margin-bottom: 30px;
     }
+
     .container_sign_login {
         padding-top: 5px;
     }
+
     .container_footer {
         margin-top: 40px;
     }
@@ -1595,9 +1713,8 @@ input:hover {
     .rs div {
         margin-left: 30px;
     }
-    .line_footer
 
-    .container_icon {
+    .line_footer .container_icon {
         margin-left: -5px;
     }
 
@@ -1605,14 +1722,15 @@ input:hover {
         display: flex;
         justify-content: end;
     }
+
     .cakes {
         margin-left: 45%;
         margin-right: 0;
     }
+
     .prisces_coffee {
         margin-right: 39%;
     }
 }
 
 /*finish media*/
-
