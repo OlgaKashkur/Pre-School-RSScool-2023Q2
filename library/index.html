@@ -39,27 +39,12 @@
             <!--profil -->
             <div class="profile">
               <span>Profile</span>
-              <p>Log In</p>
-              <p>Register</p>
+              <button id="logIn"><p>Log In</p></button>
+              <button id="register"><p>Register</p></button>
             </div>
             <!--register -->
 
-            <!--login -->
-            <div class="login">
-              <img src="./img/close_btn.svg" alt="close" />
-              <span>Login</span>
-              <p>E-mail or readers card</p>
-              <form action="#">
-                <input class="email_input" type="text" />
 
-              <p>Password</p>
-
-                <input class="password_input" type="text" />
-              </form>
-              <button>Log In</button>
-              <p class="dont_have">Don’t have an account?</p>
-              <a href="#">Register</a>
-            </div>
           </div>
           <div class="header_burger burger">
             <span class="burger_line burger_line_a"></span>
@@ -69,6 +54,41 @@
         </div>
       </div>
     </header>
+<!--login -->
+<div class="blur_bg"></div>
+            <div class="login">
+              <img src="./img/close_btn.svg" alt="close" />
+              <span>Login</span>
+              <p>E-mail or readers card</p>
+              <form action="#">
+                <input class="email_input_login" type="text" required/>
+
+              <p>Password</p>
+
+                <input class="password_input_login" type="password" required minlength="8"/>
+              </form>
+              <button>Log In</button>
+              <p class="dont_have">Don’t have an account?</p>
+              <a href="#">Register</a>
+            </div>
+            <div class="register">
+              <img src="./img/close_btn.svg" alt="close" />
+              <span>Register</span>
+              <p>First name</p>
+              <form action="#">
+                <input class="first_name_input" type="text" required/>
+              <p>Last name</p>
+                <input class="last_name_input" type="text" required/>
+                <p>E-mail</p>
+                <input class="email_input" type="email" id="mail" required  minlength="8"/>
+                <span class="error" aria-live="polite"></span>
+                <p class="pass">Password</p>
+                <input class="password_input" type="password" required minlength="8"/>
+              </form>
+              <button>Sign Up</button>
+              <div class="have_account">Already have an account?</div>
+              <a href="#">Login</a>
+            </div>
 
     <main>
       <div class="header">
@@ -752,7 +772,7 @@
                     </p>
                     <div class="container_sign_login">
                       <input class="sign_login" type="button" value="Sign Up" />
-                      <input class="sign_login" type="button" value="Log in" />
+                      <input class="sign_login" type="button" id="logInSecond" value="Log in" />
                     </div>
                   </div>
                 </div>

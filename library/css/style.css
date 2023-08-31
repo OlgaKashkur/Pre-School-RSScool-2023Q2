@@ -1369,10 +1369,6 @@ input:hover {
   display: block;
 }
 
-.profile_noactiv {
-  float: left;
-}
-
 .profile span {
   color: #000;
   font-family: Inter;
@@ -1394,7 +1390,16 @@ input:hover {
   display: block;
 }
 
-.profile p {
+.profile :nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.profile button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
   color: #000;
   font-family: Inter;
   font-size: 15px;
@@ -1402,18 +1407,28 @@ input:hover {
   font-weight: 400;
   line-height: 20px;
 }
-
-.profile p:nth-child(2) {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
+/*end profile*/
+/*start login*/
 .login {
   position: fixed;
   width: 250px;
   height: 262px;
   background: #fff;
-  margin-left: -223px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  pointer-events: none;
 }
+
+.login_activ {
+  display: block;
+}
+.login_noactiv {
+  display: none;
+}
+
 .login span {
   color: #000;
   text-align: center;
@@ -1446,30 +1461,29 @@ input:hover {
   padding-top: 60px;
 }
 .login p:nth-child(6) {
-    padding-top: 60px;
-    color: #000;
-    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .login :nth-child(7) {
-    color: #0C0C0E;
-    text-align: center;
-    font-family: Inter;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1px;
-    text-decoration-line: underline;
-    text-decoration: none;
-    position: absolute;
-    margin-top: 60px;
-    margin-left: 146px;
-  }
+  padding-top: 60px;
+  color: #000;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.login :nth-child(7) {
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-decoration-line: underline;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 146px;
+}
 .login input {
   width: 200px;
   height: 20px;
@@ -1478,10 +1492,10 @@ input:hover {
 
   margin-left: 25px;
 }
-.email_input {
+.email_input_login {
   margin-top: 90px;
 }
-.password_input {
+.password_input_login {
   margin-top: 40px;
 }
 
@@ -1506,6 +1520,197 @@ input:hover {
   line-height: normal;
   letter-spacing: 1px;
 }
+.blur_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+    background-color: rgba(0, 0, 0, .8);
+}
+.show .blur_bg {
+    opacity: 1;
+    pointer-events: auto;
+   }
+.show .login {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+
+   }
+/*end login*/
+/*start register*/
+.register {
+  width: 250px;
+height: 382px;
+background: #FFF;
+position: fixed;
+opacity: 0;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -100%);
+pointer-events: none;
+}
+.show_reg .blur_bg {
+  opacity: 1;
+  pointer-events: auto;
+ }
+.show_reg .register {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease, opacity 0.1s;
+}
+
+
+.register img {
+  position: absolute;
+  padding-left: 220px;
+  padding-top: 15px;
+}
+.register span {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding-left: 85px;
+  margin-top: 20px;
+  position: absolute;
+}
+.register p {
+  margin-left: 25px;
+  color: #000;
+
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.3px;
+}
+.register input {
+  margin-left: 25px;
+  width: 200px;
+  height: 20px;
+  flex-shrink: 0;
+border: 1px solid #BB945F;
+}
+
+.register p:nth-child(2){
+  position: absolute;
+  margin-top: 120px;
+}
+.register p:nth-child(3){
+  position: absolute;
+  margin-top: 60px;
+}
+.pass {
+  position: absolute;
+  margin-top: 240px;
+}
+.register p:nth-child(4){
+  position: absolute;
+  margin-top: 180px;
+}
+.have_account {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 25px;
+  color: #000;
+text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.register input:nth-child(1){
+  margin-top: 90px;
+  position: absolute;
+}
+.last_name_input {
+  margin-top: 150px;
+  position: absolute;
+}
+.email_input {
+  margin-top: 210px;
+  position: absolute;
+}
+.password_input {
+  margin-top: 270px;
+  position: absolute;
+}
+.register button {
+  width: 75px;
+height: 30px;
+flex-shrink: 0;
+color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+margin-top: 310px;
+margin-left: 25px;
+}
+.register a {
+  margin-top: 350px;
+   position: absolute;
+  color: #0C0C0E;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+text-decoration-line: underline;
+margin-left: 50px;
+}
+
+/*end register*/
+
+/*valid input*/
+/* Это стили для не валидных полей */
+input:invalid {
+  border-color: rgb(234, 181, 181);
+  background-color: #fdd;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* Это стили для кастомных сообщений об ошибке */
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 90%;
+  color: white;
+  background-color: rgb(243, 136, 136);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+  margin-top: 40px;
+}
+/*valid input end*/
+
+
 
 /*start media*/
 @media screen and (max-width: 1024px) {
@@ -1645,9 +1850,8 @@ input:hover {
     z-index: 10;
     padding: 100px 107px;
     transform: translateX(150%);
-    transition: 0.2s;
-    /*что бы выезжало меню плавно при 768*/
-  }
+    transition: 0.2s;}
+
 
   .header_nav_active {
     transform: translateX(0);
@@ -1694,6 +1898,7 @@ input:hover {
 
   .conteiner_switch_shelder .carret_left {
     margin-top: 20px;
+    margin-left: 100px;
   }
 
   .conteiner_switch_shelder .carret_right {
