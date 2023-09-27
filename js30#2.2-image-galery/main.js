@@ -1,6 +1,5 @@
 const API_KEY = "8c8e1a50-6322-4135-8875-5d40a5420d86";
-const API_URL =
-  "https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo";
+const API_URL = "https://api.unsplash.com/search/photos?query=spring&per_page=30&orientation=landscape&client_id=SouHY7Uul-OxoMl3LL3c0NkxUtjIrKwf3tsGk1JaiVo";
 const API_URL_SEARCH =
   "https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=";
 
@@ -23,17 +22,15 @@ function showImages(data) {
     const imagEl = document.createElement("div");
     imagEl.classList.add("image");
     imagEl.innerHTML = `
-    <div class="images">
-    <div class="image">
-        <img src="">
-    </div>
-</div>
+        <img src="${image.urls.regular}" class="img" 
+        alt="${image.alt_description}"
+        >
         `;
-    moviesEl.appendChild(movieEl);
+    imagesEl.appendChild(imagEl);
   });
 }
 
-const form = document.querySelector("form");
+/*const form = document.querySelector("form");
 const search = document.querySelector(".header__search");
 
 form.addEventListener("submit", (e) => {
