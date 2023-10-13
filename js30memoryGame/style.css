@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 212, 224);
+    font-family: 'Fuggles', cursive;
+
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 20px;
+    align-items: center;
+}
+
+p {
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(235, 13, 31);
+    font-weight: bold;
+}
+a {
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(235, 13, 31);
+    font-weight: bold;
+}
