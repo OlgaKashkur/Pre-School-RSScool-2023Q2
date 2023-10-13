@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(255, 212, 224);
+    background-color: rgb(247, 237, 240);
     font-family: 'Fuggles', cursive;
 
 }
@@ -14,29 +14,46 @@ body {
     height: auto;
 }
 img{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    margin: 5px 5px;
 }
 .container {
     display: flex;
-    max-width: 1440px;
+    max-width: 1300px;
     justify-content:space-between;
-    flex-wrap:wrap;
-       
+    flex-wrap: nowrap;
+     margin-left: 30px;  
 }
 .container_game{
-    max-width: ;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container_footer {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    padding: 20px;
+    
     align-items: center;
+    margin-left: 30px; 
+}
+.head_game{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: 30px; 
+}
+.score_game{
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(235, 13, 31);
+    font-weight: bold;
 }
 
-p {
+
+p, h1 {
     font-size: 50px;
     text-decoration: none;
     color: rgb(235, 13, 31);
@@ -47,4 +64,28 @@ a {
     text-decoration: none;
     color: rgb(235, 13, 31);
     font-weight: bold;
+}
+.cell_game {
+    cursor: pointer;
+    position: relative;
+}
+
+#back{
+    width: 60px;
+    height: 30px;
+    margin: auto;
+}
+.back {
+    border: 2px solid rgb(235, 13, 31);
+    width: 90px;
+    height: 90px;
+    margin: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.front {
+    /*transform: rotateY(90deg);*/
+    position: absolute;
+   
 }
