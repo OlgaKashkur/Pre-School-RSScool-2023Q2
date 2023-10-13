@@ -9,24 +9,29 @@ body {
     font-family: 'Fuggles', cursive;
 
 }
-#lv{
+
+#lv {
     width: 400px;
     height: auto;
 }
-img{
+
+img {
     width: 90px;
     height: 90px;
     margin: 5px 5px;
 }
+
 .container {
     display: flex;
-    max-width: 1300px;
-    justify-content:space-between;
+    max-width: 1440px;
+    justify-content: space-between;
     flex-wrap: nowrap;
-     margin-left: 30px;  
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.container_game{
-    max-width: 1000px;
+
+.container_game {
+  
     display: flex;
     flex-wrap: wrap;
 }
@@ -34,18 +39,22 @@ img{
 .container_footer {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    
+    max-width: 1440px;
+
     align-items: center;
-    margin-left: 30px; 
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.head_game{
+
+.head_game {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    margin-left: 30px; 
+    max-width: 1440px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.score_game{
+
+.score_game {
     font-size: 50px;
     text-decoration: none;
     color: rgb(235, 13, 31);
@@ -53,28 +62,32 @@ img{
 }
 
 
-p, h1 {
+p,
+h1 {
     font-size: 50px;
     text-decoration: none;
     color: rgb(235, 13, 31);
     font-weight: bold;
 }
+
 a {
     font-size: 50px;
     text-decoration: none;
     color: rgb(235, 13, 31);
     font-weight: bold;
 }
+
 .cell_game {
     cursor: pointer;
     position: relative;
 }
 
-#back{
+#back {
     width: 60px;
     height: 30px;
     margin: auto;
 }
+
 .back {
     border: 2px solid rgb(235, 13, 31);
     width: 90px;
@@ -84,8 +97,48 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .front {
     /*transform: rotateY(90deg);*/
     position: absolute;
-   
+
+}
+
+@media (max-width: 768px) {
+    #lv {
+        width: 200px;
+        height: auto;
+    }
+
+    .img {
+        width: 50px;
+    height: 50px;
+    margin: 15px 15px;
+    }
+    .cell_game img {
+        width: 50px;
+        height: 50px;
+    }
+    #back {
+        width: 50px;
+        height: 30px;
+        margin: auto;
+    }
+    .back{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 1024px) {
+    #lv {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (max-width: 670px) {
+    #lv {
+        width: 100px;
+        height: auto;
+    }
 }
