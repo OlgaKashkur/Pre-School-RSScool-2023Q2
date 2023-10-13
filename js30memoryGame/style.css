@@ -9,6 +9,24 @@ body {
     font-family: 'Fuggles', cursive;
 
 }
+#lv{
+    width: 400px;
+    height: auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.container {
+    display: flex;
+    max-width: 1440px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+       
+}
+.container_game{
+    max-width: ;
+}
 
 .container_footer {
     display: flex;
