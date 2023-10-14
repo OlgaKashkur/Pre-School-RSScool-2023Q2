@@ -1,6 +1,9 @@
 const card = document.querySelectorAll('.cell_game');
 const front = document.querySelectorAll('.front');
-
+const container = document.querySelector('.container_game');
+let score = document.querySelector('.score_game span');
+const timerContainer = document.querySelector(".time");
+const restartButton = document.querySelector("#restart");
 
 
 randomImage()
@@ -15,13 +18,28 @@ function randomImage () {  //функция для выпадения рандо
     })
 }
 
+
+
 function clickCard () { //функция для переворота карточек
     
     for ( let c = 0; c<card.length; c++){
+
+
+        front[c].classList.add('show');
+
+        setInterval(()=>{ //функция показывает цвет карточки при перезагрузе старницы 
+            front[c].classList.remove('show');
+        },3000)
+
+         
         card[c].addEventListener('click',() => {
             front[c].classList.add('change');
             const changeCard = document.querySelectorAll('.change');
             if(changeCard.length==2) {
+                container.style.pointerEvents = "none";
+                setInterval(() =>{
+                    container.style.pointerEvents = "all";
+                }, 1000);
                 compearImage (changeCard[0],changeCard[1]);
             }
         })
@@ -31,6 +49,8 @@ function clickCard () { //функция для переворота карто�
 function compearImage (cardOne,cardTwo) { //функция для сравнения карточек
     if(cardOne.dataset.index == cardTwo.dataset.index){
 
+        score.innerHTML = parseInt(score.innerHTML) + 1;//суммирование ходов верных
+        
         cardOne.classList.remove('change');
         cardTwo.classList.remove('change');
 
@@ -39,9 +59,12 @@ function compearImage (cardOne,cardTwo) { //функция для сравнен
 
     }else{
         setTimeout(() => {
+            score.innerHTML = parseInt(score.innerHTML) + 1;//суммирование ходов неверных
             cardOne.classList.remove('change');
             cardTwo.classList.remove('change');
         },1000)
        
     }
 }
+
+

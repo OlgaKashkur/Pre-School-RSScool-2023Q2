@@ -16,12 +16,24 @@
         <div class="head_game">
             <h1>Memory Game</h1>
             <div class="score_game">Score: <span>0</span></div>
+            <div class="stats-container">
+                <p class="time">Time: 00:00 </p>
+              </div>
         </div>
         
     </header>
     <main>
+        
         <div class="container">
-            <div class="imageLV"><img src="image/1050x1152-bleski-pin-up-ottenki.jpg" alt="" id="lv"></div>
+            <div class="imageLV">
+                <img src="image/1050x1152-bleski-pin-up-ottenki.jpg" alt="" id="lv">
+                <div class="controller">
+                    <div class="btn-container">
+                      <button class="button" > <a id="restart" href="#" onclick="location.reload(); return false;">Restart</a></button>
+                    </div>
+                   
+                  </div>
+            </div>
             
             <div class="container_game">
                 <div class="cell_game">
@@ -159,7 +171,7 @@
     </main>
     <footer>
         <div class="container_footer">
-            <a href="https://github.com/OlgaKashkur">Olga Kashkur</a>
+            <a href="https://github.com/OlgaKashkur">Olga Kaszkur</a>
             <p>2023</p>
             <a href="https://rs.school/js-stage0/"><img src="image/rs_school_js.svg" alt="Logo-rsSchool" width="80px"
                     height="80px"></a>

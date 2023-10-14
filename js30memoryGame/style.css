@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(247, 237, 240);
+    background-color: rgb(255, 255, 255);
     font-family: 'Fuggles', cursive;
 
 }
@@ -31,7 +31,7 @@ img {
 }
 
 .container_game {
-  
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,7 +70,7 @@ h1 {
     font-weight: bold;
 }
 
-a {
+.container_footer a {
     font-size: 50px;
     text-decoration: none;
     color: rgb(235, 13, 31);
@@ -103,12 +103,50 @@ a {
     position: absolute;
 
 }
-.change{
+
+.change {
     transform: rotateY(0deg);
+    transition: transform 0.15s linear;
 }
+
 .same {
     transform: rotateY(0deg);
+ 
 }
+.show{
+    transform: rotateY(0deg);
+}
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(235, 13, 31);
+    font-weight: bold;
+}
+
+.button {
+    background-color: #111;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 5px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .button:active {
+    transform: scale(0.95);
+  }
+  .time {
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
 
 @media screen and (max-width: 768px) {
     #lv {
@@ -118,51 +156,69 @@ a {
 
     .img {
         width: 50px;
-    height: 50px;
-    margin: 15px 15px;
+        height: 50px;
+        margin: 15px 15px;
     }
+
     .cell_game img {
         width: 50px;
         height: 50px;
     }
+
     #back {
-        width: 50px;
+        width: 40px;
         height: 30px;
         margin: auto;
     }
-    .back{
+
+    .back {
         width: 50px;
         height: 50px;
     }
 }
+
 @media screen and (max-width: 1024px) {
     #lv {
-        width: 200px;
+        width: 250px;
         height: auto;
     }
 }
 
 @media screen and (max-width: 670px) {
     #lv {
-        width: 100px;
+        width: 150px;
         height: auto;
     }
+
     .img {
         width: 40px;
-    height: 40px;
-    margin: 15px 15px;
+        height: 40px;
+        margin: 15px 15px;
     }
+
     .cell_game img {
         width: 40px;
         height: 40px;
     }
+
     #back {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 20px;
         margin: auto;
     }
-    .back{
+
+    .back {
         width: 40px;
         height: 40px;
+    }
+
+    p,
+    h1,
+    a {
+        font-size: 20px;
+    }
+     
+    .score_game {
+        font-size: 20px;
     }
 }
